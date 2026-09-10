@@ -78,6 +78,6 @@ npm run preview
 
 更多文件：[操作與介面](docs/UI.md)、[架構](docs/ARCHITECTURE.md)、[資料與來源](docs/DATA.md)、[驗證紀錄](docs/VERIFICATION.md)、[XLS 維護說明](docs/XLS.md)。
 
-目前驗證包含 200 項單元測試、19 項隔離瀏覽器操作、5,768 項原生 XLS 斷言、28 檔的 2,455 格獨立讀回，以及 32 個正式 Worker 情境。列印涵蓋 24 組日期變體與學生 7 欄私人日期補充版；字型替代與原字型 Excel 驗收限制見上述驗證紀錄。
+目前驗證包含 203 項單元測試、19 項隔離瀏覽器操作、5,768 項原生 XLS 斷言、28 檔的 2,455 格獨立讀回，以及 32 個正式 Worker 情境。匯率日期另有專用操作檢查，可執行 `qa/verify-fx-date.mjs`。列印涵蓋 24 組日期變體與學生 7 欄私人日期補充版；字型替代與原字型 Excel 驗收限制見上述驗證紀錄。
 
 官方依據：[政大旅運費](https://acc.nccu.edu.tw/content/%E6%97%85%E9%81%8B%E8%B2%BB)、[GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages)、[Vite 靜態部署](https://vite.dev/guide/static-deploy.html#github-pages)。

@@ -12,6 +12,7 @@ export interface ExpenseFxRequest {
   currency: string;
   source: 'bot-cash' | 'bot-spot';
   context: string;
+  preserveDate: boolean;
 }
 export function isAutomaticExpenseFx(expense: Expense): boolean {
   return (
@@ -26,8 +27,10 @@ export function automaticExpenseFxRequest(
   draft: Pick<Draft, 'startDate' | 'approvedStart'>,
 ): ExpenseFxRequest | null {
   const departureDate = fxDepartureDate(draft);
-  const quotationDate = fxReferenceDate(departureDate);
-  if (!isAutomaticExpenseFx(expense) || !quotationDate) return null;
+  const referenceDate = fxReferenceDate(departureDate);
+  const preserveDate = isProtectedExpenseQuote(expense);
+  const quotationDate = (preserveDate && expense.fxDate) || referenceDate;
+  if (!isAutomaticExpenseFx(expense) || !referenceDate || !quotationDate) return null;
   return {
     expenseId: expense.id,
     departureDate,
@@ -35,13 +38,14 @@ export function automaticExpenseFxRequest(
     currency: expense.currency.trim().toUpperCase(),
     source: expense.fxSource as 'bot-cash' | 'bot-spot',
     context: expenseFxContext(expense),
+    preserveDate,
   };
 }
 export function expenseFxRequestKey(request: ExpenseFxRequest): string {
   return request.departureDate + '|' + request.context;
 }
 
-/** A bank quote uses the departure reference, never an unrelated saved receipt date. */
+/** Unedited bank quotes follow departure; dates chosen by the user stay independent. */
 export function prepareAutomaticExpenseDates<T extends Draft>(draft: T): T {
   const date = fxReferenceDate(fxDepartureDate(draft)) ?? '';
   let changed = false;
@@ -101,7 +105,8 @@ export async function loadExpenseFxQuote(
     fxDate: snapshot.quotationDate,
     fxSource: hasCash ? 'bot-cash' : 'bot-spot',
     fxProofNote: snapshot.sourceUrl + (hasCash ? '' : '；此幣別無現金賣出報價'),
-    fxProvenance: 'automatic',
+    // A user-selected date remains protected even when its rate is fetched.
+    fxProvenance: request.preserveDate ? 'manual' : 'automatic',
     cashUnavailable: !hasCash,
     botUnavailable: false,
   };

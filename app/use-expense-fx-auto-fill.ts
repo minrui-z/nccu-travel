@@ -113,13 +113,16 @@ export function useExpenseFxAutoFill(
           (error: unknown) => {
             if (!mounted.current || pending.current.get(expense.id) !== key)
               return;
+            const failedResult = {
+              ...emptyExpenseFxResult,
+              fxProvenance: request.preserveDate ? 'manual' as const : undefined,
+            };
             const resultKey =
               request.departureDate +
-              '|' +
-              expenseFxContext({ ...expense, ...emptyExpenseFxResult });
+              '|' + expenseFxContext({ ...expense, ...failedResult });
             attempted.current.set(expense.id, resultKey);
             setDraft((current) =>
-              applyExpenseFxResult(current, request, emptyExpenseFxResult),
+              applyExpenseFxResult(current, request, failedResult),
             );
             setStatuses((current) => ({
               ...current,

@@ -56,7 +56,7 @@ export function updateExpense(
       ...next,
       fxRate: '',
       fxProofNote: '',
-      fxProvenance: undefined,
+      fxProvenance: update.fxProvenance ?? 'manual',
       cashUnavailable: false,
       botUnavailable: false,
     };

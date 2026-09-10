@@ -853,13 +853,12 @@ export function ExpenseForm({
                               label="匯率資料日期"
                               value={expense.fxDate || ''}
                               type="date"
-                              readOnly={automaticFx}
                               onChange={(value) =>
                                 patch(expense.id, { fxDate: value })
                               }
                               hint={
                                 automaticFx
-                                  ? '依匯率基準出發日計算，週六、日往前至週五。其他休假日請附依據並改用手動填寫。'
+                                  ? '可調整報價日期，再按「重新讀取匯率」。因休市提前時請附依據。'
                                   : undefined
                               }
                             />

@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { createSampleDraft } from '../lib/claim/claim-engine';
 import type { FxSnapshot } from '../lib/public-data';
+import { updateExpense } from '../lib/expense-state';
 import {
   applyExpenseFxResult,
   automaticExpenseFxRequest,
@@ -187,4 +188,43 @@ test('an invalid departure clears an old automatic quote and cannot trigger a lo
   assert.equal(draft.expenses[0].fxRate, '');
   assert.equal(draft.expenses[0].fxDate, '');
   assert.equal(automaticExpenseFxRequest(draft.expenses[0], draft), null);
+});
+
+test('editing or clearing a bank quote date survives automatic preparation', () => {
+  const original = prepareAutomaticExpenseDates(fixture());
+  for (const fxDate of ['2026-08-27', '']) {
+    const expense = updateExpense(original.expenses[0], { fxDate });
+    assert.equal(expense.fxProvenance, 'manual');
+    assert.equal(expense.fxRate, '');
+    assert.equal(expense.fxProofNote, '');
+    const draft = { ...original, expenses: [expense] };
+    assert.equal(prepareAutomaticExpenseDates(draft), draft);
+  }
+});
+
+test('explicit bank refresh uses and retains the selected date after a successful lookup', async () => {
+  const original = prepareAutomaticExpenseDates(fixture());
+  const draft = {
+    ...original,
+    expenses: [{ ...original.expenses[0], fxDate: '2026-08-27', fxProvenance: 'manual' as const }],
+  };
+  const request = automaticExpenseFxRequest(draft.expenses[0], draft)!;
+  const calls: string[] = [];
+  const quote = await loadExpenseFxQuote(request, async date => {
+    calls.push(date);
+    return { ...snapshot, quotationDate: '2026-08-27' };
+  });
+  assert.deepEqual(calls, ['2026-08-27']);
+  const applied = applyExpenseFxResult(draft, request, quote);
+  assert.equal(applied.expenses[0].fxDate, '2026-08-27');
+  assert.equal(applied.expenses[0].fxRate, '31.88500');
+  assert.equal(prepareAutomaticExpenseDates(applied), applied);
+});
+
+test('a response for the old date cannot overwrite a newly selected date', async () => {
+  const draft = prepareAutomaticExpenseDates(fixture());
+  const request = automaticExpenseFxRequest(draft.expenses[0], draft)!;
+  const result = await loadExpenseFxQuote(request, async () => snapshot);
+  const edited = { ...draft, expenses: [updateExpense(draft.expenses[0], { fxDate: '2026-08-27' })] };
+  assert.equal(applyExpenseFxResult(edited, request, result), edited);
 });

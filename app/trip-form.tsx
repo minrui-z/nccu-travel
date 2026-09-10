@@ -262,7 +262,8 @@ export function TripForm({
       const startingFx = JSON.stringify(starting.fx);
       setLoading(true);
       try {
-        const date = fxReferenceDate(fxDepartureDate(starting));
+        const selectedDate = !automatic && starting.fx.rateDate;
+        const date = selectedDate || fxReferenceDate(fxDepartureDate(starting));
         if (!date) throw new FxInputError('請先設定出發日期。');
         const snapshot = await exactSnapshot(date);
         const rate = snapshot.currencyRates.USD?.cashSelling;
@@ -289,7 +290,7 @@ export function TripForm({
               rateDate: date,
               source: 'bot',
               proofNote: snapshot.sourceUrl,
-              provenance: 'automatic',
+              provenance: selectedDate ? 'manual' : 'automatic',
             },
           };
         });
