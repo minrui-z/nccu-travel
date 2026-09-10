@@ -36,22 +36,24 @@ const read = () => page.evaluate(() => new Promise((resolve, reject) => {
   request.onerror = () => reject(request.error);
 }));
 const waitStored = async (expected) => {
-  await page.waitForFunction(async (pairs) => {
-    const draft = await new Promise((resolve, reject) => {
-      const request = indexedDB.open('nccu-travel-workbench', 1);
-      request.onsuccess = () => {
-        const db = request.result;
-        const transaction = db.transaction('local-records');
-        const get = transaction.objectStore('local-records').get('active-draft');
-        get.onsuccess = () => resolve(get.result);
-        get.onerror = () => reject(get.error);
-        transaction.oncomplete = () => db.close();
-      };
-      request.onerror = () => reject(request.error);
-    });
-    return pairs.every(([path, value]) => path.split('.').reduce((current, key) => current?.[key], draft) === value);
-  }, Object.entries(expected));
-  await waitSaved();
+  const matches = (draft) => Object.entries(expected).every(([path, value]) =>
+    path.split('.').reduce((current, key) => current?.[key], draft) === value);
+  const deadline = Date.now() + 10000;
+  do {
+    if (matches(await read())) {
+      await waitSaved();
+      if (matches(await read())) return;
+    }
+    await page.evaluate(() => new Promise((resolve) => requestAnimationFrame(() => resolve())));
+  } while (Date.now() < deadline);
+  assert.fail(`Saved draft did not reach ${JSON.stringify(expected)}`);
+};
+const assertFieldValue = async (path, value) => {
+  await page.waitForFunction(({ path, value }) => {
+    const input = document.querySelector(`[data-slot="tabs-content"]:not([hidden]) [data-field-path="${path}"] input`);
+    return input?.value === value;
+  }, { path, value });
+  assert.equal(await field(path).inputValue(), value);
 };
 const seedDraft = async (draft) => {
   await page.evaluate((value) => new Promise((resolve, reject) => {
@@ -97,6 +99,10 @@ try {
   const quote = await quoteResponse.json();
   assert.equal(quote.quotationDate, chosenDate);
   const expectedRate = quote.currencyRates.USD.cashSelling;
+  const referenceResponse = await context.request.get(new URL(`data/fx/${referenceDate}.json`, base).href);
+  assert.ok(referenceResponse.ok(), 'The departure-reference fixture must exist on the tested website');
+  const referenceQuote = await referenceResponse.json();
+  assert.equal(referenceQuote.quotationDate, referenceDate);
   const draft = createPublicExample('general');
   Object.assign(draft.expenses[1], {
     fxSource: 'bot-cash', fxProvenance: 'automatic', fxDate: referenceDate,
@@ -105,12 +111,10 @@ try {
   await page.goto(base);
   await waitSaved();
   await seedDraft(draft);
+  // The first automatic lookup may finish after the editor is opened and then
+  // collapse it. Wait for persisted quote data before opening its editor.
+  await waitStored({ 'expenses.1.fxDate': referenceDate, 'expenses.1.fxRate': referenceQuote.currencyRates.USD.cashSelling });
   await openExpenseFx();
-  await page.waitForFunction(() => {
-    const input = document.querySelector('[data-field-path="expenses.1.fxRate"] input');
-    return Boolean(input?.value);
-  });
-  await waitSaved();
   const untouched = await read();
 
   await check('Bank expense quotation date is editable and changing it clears the previous rate and proof', async () => {
@@ -148,7 +152,9 @@ try {
     assert.ok(!quoteRequests.slice(previousRequestCount).includes(referenceDate));
     await go('基本資料'); await page.reload(); await waitSaved(); await openExpenseFx();
     assert.equal(await field('expenses.1.fxDate').inputValue(), chosenDate);
-    assert.equal(await field('expenses.1.fxRate').inputValue(), expectedRate);
+    const restored = await read();
+    assert.equal(restored.expenses[1].fxRate, expectedRate, 'Persisted expense rate after reload');
+    await assertFieldValue('expenses.1.fxRate', expectedRate);
   });
 
   await check('Missing expense quotation data keeps the chosen date and empty amount after failure and reload', async () => {
@@ -174,7 +180,9 @@ try {
     assert.deepEqual((await read()).expenses, before.expenses);
     await go('費用'); await page.reload(); await waitSaved(); await openLivingFx();
     assert.equal(await field('fx.rateDate').inputValue(), chosenDate);
-    assert.equal(await field('fx.rate').inputValue(), expectedRate);
+    const restored = await read();
+    assert.equal(restored.fx.rate, expectedRate, 'Persisted living rate after reload');
+    await assertFieldValue('fx.rate', expectedRate);
   });
 
   await check('Expense and living date changes remain independent, with no page errors or external requests', async () => {
@@ -203,7 +211,7 @@ try {
     await waitStored({ 'expenses.1.fxDate': chosenDate, 'expenses.1.fxRate': expectedRate, 'expenses.1.fxProvenance': 'manual' });
     await page.reload(); await waitSaved(); await openExpenseFx();
     assert.equal(await field('expenses.1.fxDate').inputValue(), chosenDate);
-    assert.equal(await field('expenses.1.fxRate').inputValue(), expectedRate);
+    await assertFieldValue('expenses.1.fxRate', expectedRate);
     const current = await read();
     assert.equal(current.expenses[1].fxProvenance, 'manual');
     assert.deepEqual(current.expenses[2], imported.expenses[2]);
