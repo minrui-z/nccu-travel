@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 1,
+  "quotationDate": "2026-06-25",
+  "quotationKind": "business-hours-closing",
+  "baseCurrency": "TWD",
+  "unit": "TWD per 1 foreign currency unit",
+  "sourceUrl": "https://rate.bot.com.tw/xrt/flcsv/0/2026-06-25",
+  "sourceMethod": "official-csv-https-get",
+  "retrievedAt": "2026-09-09T13:51:07.778Z",
+  "sha256": "57de84661f7d94409e58760be72834535b1a6ae6a0d77a7d12696e58f0f433c3",
+  "hashScope": "original-response-bytes",
+  "currencyRates": {
+    "USD": {
+      "cashBuying": "31.45000",
+      "spotBuying": "31.80000",
+      "cashSelling": "32.12000",
+      "spotSelling": "31.90000"
+    },
+    "HKD": {
+      "cashBuying": "3.90600",
+      "spotBuying": "4.03200",
+      "cashSelling": "4.11000",
+      "spotSelling": "4.09200"
+    },
+    "GBP": {
+      "cashBuying": "40.81000",
+      "spotBuying": "41.82000",
+      "cashSelling": "42.93000",
+      "spotSelling": "42.22000"
+    },
+    "AUD": {
+      "cashBuying": "21.59000",
+      "spotBuying": "21.88000",
+      "cashSelling": "22.37000",
+      "spotSelling": "22.08000"
+    },
+    "CAD": {
+      "cashBuying": "21.89000",
+      "spotBuying": "22.29000",
+      "cashSelling": "22.80000",
+      "spotSelling": "22.49000"
+    },
+    "SGD": {
+      "cashBuying": "23.99000",
+      "spotBuying": "24.48000",
+      "cashSelling": "24.90000",
+      "spotSelling": "24.66000"
+    },
+    "CHF": {
+      "cashBuying": "38.46000",
+      "spotBuying": "39.14000",
+      "cashSelling": "39.66000",
+      "spotSelling": "39.39000"
+    },
+    "JPY": {
+      "cashBuying": "0.18760",
+      "spotBuying": "0.19490",
+      "cashSelling": "0.20040",
+      "spotSelling": "0.19890"
+    },
+    "ZAR": {
+      "cashBuying": null,
+      "spotBuying": "1.88500",
+      "cashSelling": null,
+      "spotSelling": "1.96500"
+    },
+    "SEK": {
+      "cashBuying": null,
+      "spotBuying": "3.23000",
+      "cashSelling": null,
+      "spotSelling": "3.33000"
+    },
+    "NZD": {
+      "cashBuying": "17.51000",
+      "spotBuying": "17.89000",
+      "cashSelling": "18.36000",
+      "spotSelling": "18.09000"
+    },
+    "THB": {
+      "cashBuying": "0.82570",
+      "spotBuying": "0.93910",
+      "cashSelling": "1.01570",
+      "spotSelling": "0.97910"
+    },
+    "PHP": {
+      "cashBuying": "0.45420",
+      "spotBuying": null,
+      "cashSelling": "0.58620",
+      "spotSelling": null
+    },
+    "IDR": {
+      "cashBuying": "0.00143",
+      "spotBuying": null,
+      "cashSelling": "0.00213",
+      "spotSelling": null
+    },
+    "EUR": {
+      "cashBuying": "35.38000",
+      "spotBuying": "36.00000",
+      "cashSelling": "36.72000",
+      "spotSelling": "36.40000"
+    },
+    "KRW": {
+      "cashBuying": "0.01895",
+      "spotBuying": null,
+      "cashSelling": "0.02285",
+      "spotSelling": null
+    },
+    "VND": {
+      "cashBuying": "0.00099",
+      "spotBuying": null,
+      "cashSelling": "0.00140",
+      "spotSelling": null
+    },
+    "MYR": {
+      "cashBuying": "6.71000",
+      "spotBuying": null,
+      "cashSelling": "8.23500",
+      "spotSelling": null
+    },
+    "CNY": {
+      "cashBuying": "4.58400",
+      "spotBuying": "4.65600",
+      "cashSelling": "4.74600",
+      "spotSelling": "4.70600"
+    }
+  },
+  "localSourcePath": "sources/bot-2026-06-25.csv"
+}

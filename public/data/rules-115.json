@@ -1,0 +1,543 @@
+{
+  "schemaVersion": 1,
+  "id": "nccu-overseas-travel-115",
+  "title": "政大115年國外出差報支規則簡表",
+  "effectiveFrom": "2026-01-01",
+  "effectiveTo": null,
+  "reviewedAt": "2026-09-09T02:51:09.674019Z",
+  "language": "zh-TW",
+  "scope": "短期會議、參訪及一般出差",
+  "sources": [
+    {
+      "id": "dgbas-travel-rules",
+      "title": "國外出差旅費報支要點",
+      "url": "https://law.dgbas.gov.tw/LawContent.aspx?id=FL017584",
+      "amendedAt": "2025-05-13",
+      "effectiveFrom": "2026-01-01"
+    },
+    {
+      "id": "nccu-checklist-115",
+      "title": "國立政治大學國外出差旅費報支重點檢查表（115年版）",
+      "url": "https://acc.nccu.edu.tw/sites/default/files/國立政治大學國外出差旅費報支重點檢查表%28115年版%29.pdf",
+      "effectiveFrom": "2026-01-01",
+      "preparedAt": "2025-12",
+      "pages": 4,
+      "sha256": "6f334db53efc79beda852b5c4edd85cdf67d4f0f955b2c4a09b560587b6bce5d",
+      "hashScope": "user-provided-official-pdf-bytes-read-directly"
+    },
+    {
+      "id": "dgbas-foreign-2026",
+      "title": "中央政府各機關派赴國外各地區出差人員生活費日支數額表",
+      "url": "https://law.dgbas.gov.tw/Download.ashx?FileID=3648&id=21709&type=ANN",
+      "localPath": "sources/foreign-daily-allowance-2026.pdf",
+      "sha256": "efb38d5b9cf5bb96c66eff937370717871e8ebd31f134e4a630ebbc11ae67a32",
+      "retrievedAt": "2026-09-09T02:26:50.221849Z",
+      "announcementUrl": "https://law.dgbas.gov.tw/NewsContent.aspx?id=21709"
+    },
+    {
+      "id": "dgbas-mainland-hk-macau-2026",
+      "title": "中央政府各機關派赴大陸地區、香港及澳門出差人員生活費日支數額表",
+      "url": "https://law.dgbas.gov.tw/Download.ashx?FileID=3650&id=21710&type=ANN",
+      "localPath": "sources/mainland-hk-macau-daily-allowance-2026.pdf",
+      "sha256": "f680a925023bd4259e8c3f5d22097b872c58d3d383edba928838a3fe8bb060eb",
+      "retrievedAt": "2026-09-09T02:26:50.221849Z",
+      "announcementUrl": "https://law.dgbas.gov.tw/NewsContent.aspx?id=21710"
+    },
+    {
+      "id": "nccu-insurance-2025",
+      "title": "一般險及申根險保費表 2025-06-21 至 2026-06-20",
+      "url": "https://acc.nccu.edu.tw/sites/default/files/%E3%80%8C%E5%9B%A0%E5%85%AC%E8%B5%B4%E5%9C%8B%E5%A4%96%E5%87%BA%E5%B7%AE%E6%88%96%E8%BF%94%E5%9C%8B%E8%BF%B0%E8%81%B7%E4%BA%BA%E5%93%A1%E7%B6%9C%E5%90%88%E4%BF%9D%E9%9A%AA%E3%80%8D%E5%85%B1%E5%90%8C%E4%BE%9B%E6%87%89%E5%A5%91%E7%B4%84%E4%BF%9D%E9%9A%AA%E8%B2%BB%E7%8E%87%E8%A1%A8%E4%B8%80%E8%88%AC%E9%9A%AA%E8%B2%BB%E7%8E%87%E8%A1%A8%E5%8F%8A%E7%94%B3%E6%A0%B9%E5%BC%8F%E8%B2%BB%E7%8E%87%E8%A1%A8%28114%E5%B9%B46%E6%9C%8821%E6%97%A5%E8%B5%B7%E8%87%B3115%E5%B9%B46%E6%9C%8820%E6%97%A5%E6%AD%A2%29.pdf",
+      "localPath": "sources/insurance-premiums-2025.pdf",
+      "sha256": "54e1e7d55bb66a9915e9d31ad3a70daed978e87571bd8bcb849e707c66bb4fee",
+      "retrievedAt": "2026-09-09T02:26:50.221849Z",
+      "listingUrl": "https://acc.nccu.edu.tw/content/%E6%97%85%E9%81%8B%E8%B2%BB",
+      "periodEvidence": "NCCU public attachment filename; period is not printed inside PDF"
+    },
+    {
+      "id": "nccu-insurance-2026",
+      "title": "一般險及申根險保費表 2026-06-21 至 2027-06-20",
+      "url": "https://acc.nccu.edu.tw/sites/default/files/%E3%80%8C%E5%9B%A0%E5%85%AC%E8%B5%B4%E5%9C%8B%E5%A4%96%E5%87%BA%E5%B7%AE%E6%88%96%E8%BF%94%E5%9C%8B%E8%BF%B0%E8%81%B7%E4%BA%BA%E5%93%A1%E7%B6%9C%E5%90%88%E4%BF%9D%E9%9A%AA%E3%80%8D%E5%85%B1%E5%90%8C%E4%BE%9B%E6%87%89%E5%A5%91%E7%B4%84%E4%BF%9D%E9%9A%AA%E8%B2%BB%E7%8E%87%E8%A1%A8%E4%B8%80%E8%88%AC%E9%9A%AA%E8%B2%BB%E7%8E%87%E8%A1%A8%E5%8F%8A%E7%94%B3%E6%A0%B9%E5%BC%8F%E8%B2%BB%E7%8E%87%E8%A1%A8%28115%E5%B9%B46%E6%9C%8821%E6%97%A5%E8%B5%B7%E8%87%B3116%E5%B9%B46%E6%9C%8820%E6%97%A5%E6%AD%A2%29.pdf",
+      "localPath": "sources/insurance-premiums-2026.pdf",
+      "sha256": "54e1e7d55bb66a9915e9d31ad3a70daed978e87571bd8bcb849e707c66bb4fee",
+      "retrievedAt": "2026-09-09T02:26:50.221849Z",
+      "listingUrl": "https://acc.nccu.edu.tw/content/%E6%97%85%E9%81%8B%E8%B2%BB",
+      "periodEvidence": "NCCU public attachment filename; period is not printed inside PDF"
+    }
+  ],
+  "rules": [
+    {
+      "id": "approved-duty",
+      "title": "公差與私人行程",
+      "summary": "以核准出差行程及日數列報；未申請公差的日期不支領生活費，例假日也須為公差。私人費用不得因列在出差日期內就列報。",
+      "status": "verified",
+      "effectiveFrom": "2026-01-01",
+      "sourceRefs": [
+        {
+          "sourceId": "dgbas-travel-rules",
+          "point": 3
+        },
+        {
+          "sourceId": "dgbas-travel-rules",
+          "point": 4
+        },
+        {
+          "sourceId": "nccu-checklist-115",
+          "page": 2
+        },
+        {
+          "sourceId": "nccu-checklist-115",
+          "page": 3
+        }
+      ],
+      "parameters": {
+        "personalLivingPercent": 0,
+        "weekendRequiresApprovedDuty": true
+      },
+      "implementationNote": "費用日期為公務列支日，不是預先刷卡或付款日期。列在私人或不符公差條件日期的費用須更正或排除，不能默默移除。"
+    },
+    {
+      "id": "local-civil-dates",
+      "title": "使用當地日期與時間",
+      "summary": "出差日期與時間採當地日期、時間；一日跨越多地，生活費日支額採當日留宿地。",
+      "status": "verified",
+      "effectiveFrom": "2026-01-01",
+      "sourceRefs": [
+        {
+          "sourceId": "dgbas-travel-rules",
+          "point": 19,
+          "paragraph": 2
+        },
+        {
+          "sourceId": "nccu-checklist-115",
+          "page": 4
+        },
+        {
+          "sourceId": "dgbas-foreign-2026",
+          "page": 28,
+          "note": 3
+        }
+      ],
+      "parameters": {
+        "dateConvention": "local-civil-date",
+        "rateLocation": "overnight-location"
+      }
+    },
+    {
+      "id": "allowance-table",
+      "title": "官方日支額與季節",
+      "summary": "以美元為計算單位，依適用日支表及季節查表。未列城市或期間用同國「其他」；未列國家比照距離最近國家的「其他」。",
+      "status": "verified",
+      "effectiveFrom": "2026-01-01",
+      "sourceRefs": [
+        {
+          "sourceId": "dgbas-travel-rules",
+          "point": 7
+        },
+        {
+          "sourceId": "nccu-checklist-115",
+          "page": 4
+        },
+        {
+          "sourceId": "dgbas-foreign-2026",
+          "page": 28,
+          "notes": [
+            1,
+            2
+          ]
+        },
+        {
+          "sourceId": "dgbas-mainland-hk-macau-2026",
+          "page": 2,
+          "note": 1
+        }
+      ],
+      "parameters": {
+        "currency": "USD",
+        "dataFile": "allowances-2026.json"
+      },
+      "implementationNote": "未列國家的最近國家及沒有Other項目的情況不自動推定。資料與表單僅支援115新制，不能套用2025。"
+    },
+    {
+      "id": "living-components",
+      "title": "住宿、膳食與零用費",
+      "summary": "生活費分為住宿70%、早餐4%、午餐8%、晚餐8%、零用費10%，按實際供膳宿扣減。",
+      "status": "verified",
+      "effectiveFrom": "2026-01-01",
+      "sourceRefs": [
+        {
+          "sourceId": "dgbas-travel-rules",
+          "point": 7
+        },
+        {
+          "sourceId": "dgbas-travel-rules",
+          "point": 9
+        },
+        {
+          "sourceId": "nccu-checklist-115",
+          "page": 4
+        }
+      ],
+      "parameters": {
+        "lodgingPercent": 70,
+        "breakfastPercent": 4,
+        "lunchPercent": 8,
+        "dinnerPercent": 8,
+        "incidentalsPercent": 10
+      }
+    },
+    {
+      "id": "provided-lodging-return",
+      "title": "免費住宿、交通工具歇夜與返國日",
+      "summary": "住免費宿舍、過境旅館、交通工具歇夜及返國當日，扣除住宿70%；返國日生活費在30%限額內列報，不重複扣除住宿。",
+      "status": "verified",
+      "effectiveFrom": "2026-01-01",
+      "sourceRefs": [
+        {
+          "sourceId": "dgbas-travel-rules",
+          "point": 9
+        },
+        {
+          "sourceId": "nccu-checklist-115",
+          "page": 4
+        }
+      ],
+      "parameters": {
+        "lodgingDeductionPercent": 70,
+        "returnMaximumPercent": 30,
+        "deductLodgingAtMostOnce": true
+      }
+    },
+    {
+      "id": "included-meals",
+      "title": "已提供及費用內附帶餐食",
+      "summary": "免費餐食，以及按第八點檢據報支住宿費或其他報名等費用已附帶的餐食，依早餐4%、午晚餐各8%扣減；飛機航程供餐免扣。",
+      "status": "verified",
+      "effectiveFrom": "2026-01-01",
+      "sourceRefs": [
+        {
+          "sourceId": "dgbas-travel-rules",
+          "point": 9,
+          "paragraphs": [
+            2,
+            3
+          ]
+        },
+        {
+          "sourceId": "nccu-checklist-115",
+          "page": 4
+        }
+      ],
+      "parameters": {
+        "aircraftMealsDeducted": false
+      },
+      "implementationNote": "不要把一般自行住宿方案的早餐一概套為第八點檢據住宿供餐。混合航程餐與會議餐時，僅填應扣的會議等餐食。"
+    },
+    {
+      "id": "cash-allowance-support",
+      "title": "外部提供膳宿或現金津貼",
+      "summary": "外部提供膳宿或現金津貼時須依第九點計算可補足的生活費；有現金津貼時不能只勾免費膳宿而忽略已受領津貼。",
+      "status": "requires-case-review",
+      "effectiveFrom": "2026-01-01",
+      "sourceRefs": [
+        {
+          "sourceId": "dgbas-travel-rules",
+          "point": 9
+        }
+      ],
+      "implementationNote": "本版可輸入明確應扣美元額並記錄原因；現金津貼超過零用費、跨日分攤或混合補助情形不得由系統自行猜分配。經費來源共同分攤與免費膳宿是不同概念。"
+    },
+    {
+      "id": "receipt-lodging-exception",
+      "title": "檢據住宿僅限規定情形",
+      "summary": "代表政府出席國際會議或談判且指定旅館、紅色警示地區，以及第八點其他指定情形，依各款限制檢據報支超過70%的住宿費。",
+      "status": "out-of-first-release-scope",
+      "effectiveFrom": "2026-01-01",
+      "sourceRefs": [
+        {
+          "sourceId": "dgbas-travel-rules",
+          "point": 8
+        }
+      ],
+      "implementationNote": "一般自行訂房不能在完整日支生活費外再加報住宿費；第一版不自動計算第八點特殊住宿。"
+    },
+    {
+      "id": "living-fx",
+      "title": "生活費美元匯率",
+      "summary": "有奉派出差前15日至返國日期間的美元結匯水單或匯率證明，依其匯率；沒有證明，採奉派出差前一日臺銀美元現金賣出，假日向前。",
+      "status": "verified",
+      "effectiveFrom": "2026-01-01",
+      "sourceRefs": [
+        {
+          "sourceId": "dgbas-travel-rules",
+          "point": 19,
+          "paragraph": 3
+        },
+        {
+          "sourceId": "nccu-checklist-115",
+          "page": 3
+        },
+        {
+          "sourceId": "nccu-checklist-115",
+          "page": 4
+        }
+      ],
+      "parameters": {
+        "currency": "USD",
+        "bankRateField": "cashSelling",
+        "referenceEvent": "approvedStart",
+        "referenceOffsetDays": -1,
+        "receiptEarliestOffsetDays": -15,
+        "receiptLatestEvent": "returnDate",
+        "receiptBoundaryInclusive": true
+      },
+      "implementationNote": "手動輸入仍須選銀行報價或結匯憑證，套用相同日期規則。缺漏快照不能當休市證據。"
+    },
+    {
+      "id": "receipted-expense-fx",
+      "title": "其他外幣檢據費用匯率",
+      "summary": "檢附原始單據的當地外幣費用可依該幣別及第十九點辦理；沒有臺銀現金賣出才用即期賣出，兩者皆無再採發行國中央銀行或貨幣主管機關的該幣對美元匯價折算。",
+      "status": "verified",
+      "effectiveFrom": "2026-01-01",
+      "sourceRefs": [
+        {
+          "sourceId": "dgbas-travel-rules",
+          "point": 19,
+          "paragraph": 4
+        },
+        {
+          "sourceId": "nccu-checklist-115",
+          "page": 2
+        }
+      ],
+      "parameters": {
+        "fallbackOrder": [
+          "bot-cash-selling",
+          "bot-spot-selling",
+          "issuer-central-bank-usd-cross"
+        ]
+      },
+      "implementationNote": "實際費用與生活費可使用不同符合規定的匯率；兌換方向、跨匯率與證明由使用者核對。"
+    },
+    {
+      "id": "card-payments",
+      "title": "信用卡結算及交易手續費",
+      "summary": "得依信用卡結算匯率報支。信用卡支付手續費併入對應費目，原費目有上限時連同手續費受同一上限限制。",
+      "status": "verified",
+      "effectiveFrom": "2026-01-01",
+      "sourceRefs": [
+        {
+          "sourceId": "dgbas-travel-rules",
+          "point": 4,
+          "paragraph": 5
+        },
+        {
+          "sourceId": "dgbas-travel-rules",
+          "point": 19,
+          "paragraph": 5
+        },
+        {
+          "sourceId": "nccu-checklist-115",
+          "page": 2
+        }
+      ],
+      "parameters": {
+        "cardFeeBelongsToOriginalCategory": true,
+        "cardFeeInsideCategoryCap": true
+      },
+      "implementationNote": "避免同時把交易手續費又填一次「手續費」；請附帳單及必要支出證明。"
+    },
+    {
+      "id": "misc-cap",
+      "title": "一般個人禮品交際及雜費上限",
+      "summary": "禮品、交際、國外計程車及租車等，普通個人按出差日數每日1,100元合計總額內檢據報支；不是每項或每筆各有1,100元。",
+      "status": "verified",
+      "effectiveFrom": "2026-01-01",
+      "sourceRefs": [
+        {
+          "sourceId": "dgbas-travel-rules",
+          "point": 17
+        },
+        {
+          "sourceId": "nccu-checklist-115",
+          "page": 3
+        }
+      ],
+      "parameters": {
+        "currency": "TWD",
+        "perApprovedDay": 1100,
+        "aggregation": "all-misc-categories-over-whole-trip"
+      },
+      "implementationNote": "司處長級以上率團、符合必要且較大眾陸運節省的租車等另有例外；第一版須另行人工核定，不能直接超出一般上限。"
+    },
+    {
+      "id": "insurance",
+      "title": "保險保額與保費分別受限",
+      "summary": "政大規定綜合保險額度上限400萬元，保費則以適用共同供應契約費率表為報支上限，並檢附保費收據與必要保額文件。",
+      "status": "verified",
+      "effectiveFrom": "2026-01-01",
+      "sourceRefs": [
+        {
+          "sourceId": "dgbas-travel-rules",
+          "point": 14
+        },
+        {
+          "sourceId": "nccu-checklist-115",
+          "page": 3
+        }
+      ],
+      "parameters": {
+        "coverageCeilingNtd": "4000000",
+        "premiumDataFile": "insurance-premiums.json"
+      },
+      "implementationNote": "契約期間、方案、年齡及保險天數依保單確認。表內成人方案未載保額，不可反推；保險天數也不能直接用公差天數代替。"
+    },
+    {
+      "id": "handling-fees",
+      "title": "手續費範圍",
+      "summary": "護照、簽證、黃皮書、預防針、結匯手續費及機場服務費，檢附原始單據或旅行業代收轉付收據核實報支。",
+      "status": "verified",
+      "effectiveFrom": "2026-01-01",
+      "sourceRefs": [
+        {
+          "sourceId": "dgbas-travel-rules",
+          "point": 13
+        },
+        {
+          "sourceId": "nccu-checklist-115",
+          "page": 3
+        }
+      ]
+    },
+    {
+      "id": "administrative-approval",
+      "title": "行政費與事前核准",
+      "summary": "報名、註冊及執行公務必要的資料、郵電、翻譯、運費等，按規定事前簽准；政大檢查表對國科會計畫報名及註冊費另列例外，不能擴張為全部行政費都免簽准。",
+      "status": "verified",
+      "effectiveFrom": "2026-01-01",
+      "sourceRefs": [
+        {
+          "sourceId": "dgbas-travel-rules",
+          "point": 15
+        },
+        {
+          "sourceId": "nccu-checklist-115",
+          "page": 2
+        }
+      ]
+    },
+    {
+      "id": "cabin",
+      "title": "艙等、私人升等與繞道",
+      "summary": "一般搭乘基礎標準艙等；私人因素升等或繞道，須說明且僅按可報支經濟艙票價列報並備票價證明。符合職等及航程的例外須另附資格與原表附表。",
+      "status": "verified",
+      "effectiveFrom": "2026-01-01",
+      "sourceRefs": [
+        {
+          "sourceId": "dgbas-travel-rules",
+          "point": 5
+        },
+        {
+          "sourceId": "nccu-checklist-115",
+          "page": 1
+        },
+        {
+          "sourceId": "nccu-checklist-115",
+          "page": 2
+        }
+      ],
+      "parameters": {
+        "standardCabin": "economy-excluding-premium-economy"
+      },
+      "implementationNote": "保留實際搭乘艙等；勾選僅申請經濟艙不等於把實際艙等改成經濟艙。"
+    },
+    {
+      "id": "funding-and-sharing",
+      "title": "補助計畫、行程變更與經費分攤",
+      "summary": "確認計畫核定出國種類與行程；有應辦變更先取得同意。有其他經費來源分攤先完成校內程序並附支出科目分攤表。",
+      "status": "verified",
+      "effectiveFrom": "2026-01-01",
+      "sourceRefs": [
+        {
+          "sourceId": "nccu-checklist-115",
+          "page": 1
+        }
+      ],
+      "implementationNote": "申請金額上限只會限制本次申請總額，不代替成本分攤或移除已由其他來源支付的同一支出。"
+    },
+    {
+      "id": "submission-window",
+      "title": "銷差後送件期限",
+      "summary": "於銷差之日起算45日內，逐日分項登載旅費報告表，連同單據送審。",
+      "status": "verified",
+      "effectiveFrom": "2026-01-01",
+      "sourceRefs": [
+        {
+          "sourceId": "dgbas-travel-rules",
+          "point": 19,
+          "paragraph": 1
+        },
+        {
+          "sourceId": "nccu-checklist-115",
+          "page": 4
+        }
+      ],
+      "parameters": {
+        "days": 45,
+        "startEvent": "dischargeDate"
+      },
+      "implementationNote": "這份資料記載官方45日期限文字；未另推定校內收件時間、關帳或期限末日順延。"
+    },
+    {
+      "id": "rounding-provisional",
+      "title": "目前採用的尾數口徑",
+      "summary": "官方日支表要求百分率計算總計後不足一元進位，但所指幣別與換匯順序仍未取得明確校內口徑。依使用者同意，第一版暫將同費目精確臺幣加總後四捨五入至元，再加總各費目。2026-09-09 依使用者要求，介面與檔名不加狀態標記。",
+      "status": "provisional-user-authorized",
+      "effectiveFrom": "2026-01-01",
+      "sourceRefs": [
+        {
+          "sourceId": "dgbas-foreign-2026",
+          "page": 28,
+          "note": 4
+        },
+        {
+          "sourceId": "dgbas-mainland-hk-macau-2026",
+          "page": 2,
+          "note": 2
+        }
+      ],
+      "parameters": {
+        "provisionalMode": "category-half-up",
+        "displayGroupingAffectsTotal": false,
+        "officialRoundingCurrency": null,
+        "officialFxRoundingOrder": null
+      },
+      "implementationNote": "範例268×3.44×29.995＝27652.9904→27653，同時符合臺幣進位及四捨五入；報名費350×29.995＝10498.25→10498。範例沒有多筆同費目的進位例子，不能宣稱它證明所有費目均應類別加總後四捨五入。"
+    },
+    {
+      "id": "unsupported-cases",
+      "title": "第一版適用範圍",
+      "summary": "第一版支援115年起短期會議、參訪及出差；移地研究、同地長駐、特殊檢據住宿及超出一般額度的例外案件須另確認。",
+      "status": "product-scope",
+      "effectiveFrom": "2026-01-01",
+      "sourceRefs": [
+        {
+          "sourceId": "dgbas-travel-rules",
+          "point": 8
+        },
+        {
+          "sourceId": "dgbas-travel-rules",
+          "point": 10
+        },
+        {
+          "sourceId": "dgbas-travel-rules",
+          "point": 11
+        },
+        {
+          "sourceId": "nccu-checklist-115",
+          "page": 4
+        }
+      ],
+      "implementationNote": "官方另有跨新舊制度及已預訂機票住宿規定；第一版不自動處理2025或跨制度案件。"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-09T02:39:26.462022Z",
+  "sources": [
+    {
+      "id": "dgbas-foreign-2026",
+      "title": "中央政府各機關派赴國外各地區出差人員生活費日支數額表",
+      "url": "https://law.dgbas.gov.tw/Download.ashx?FileID=3648&id=21709&type=ANN",
+      "localPath": "sources/foreign-daily-allowance-2026.pdf",
+      "sha256": "efb38d5b9cf5bb96c66eff937370717871e8ebd31f134e4a630ebbc11ae67a32",
+      "retrievedAt": "2026-09-09T02:26:50.221849Z",
+      "announcementUrl": "https://law.dgbas.gov.tw/NewsContent.aspx?id=21709"
+    },
+    {
+      "id": "dgbas-mainland-hk-macau-2026",
+      "title": "中央政府各機關派赴大陸地區、香港及澳門出差人員生活費日支數額表",
+      "url": "https://law.dgbas.gov.tw/Download.ashx?FileID=3650&id=21710&type=ANN",
+      "localPath": "sources/mainland-hk-macau-daily-allowance-2026.pdf",
+      "sha256": "f680a925023bd4259e8c3f5d22097b872c58d3d383edba928838a3fe8bb060eb",
+      "retrievedAt": "2026-09-09T02:26:50.221849Z",
+      "announcementUrl": "https://law.dgbas.gov.tw/NewsContent.aspx?id=21710"
+    },
+    {
+      "id": "nccu-insurance-2025",
+      "title": "一般險及申根險保費表 2025-06-21 至 2026-06-20",
+      "url": "https://acc.nccu.edu.tw/sites/default/files/%E3%80%8C%E5%9B%A0%E5%85%AC%E8%B5%B4%E5%9C%8B%E5%A4%96%E5%87%BA%E5%B7%AE%E6%88%96%E8%BF%94%E5%9C%8B%E8%BF%B0%E8%81%B7%E4%BA%BA%E5%93%A1%E7%B6%9C%E5%90%88%E4%BF%9D%E9%9A%AA%E3%80%8D%E5%85%B1%E5%90%8C%E4%BE%9B%E6%87%89%E5%A5%91%E7%B4%84%E4%BF%9D%E9%9A%AA%E8%B2%BB%E7%8E%87%E8%A1%A8%E4%B8%80%E8%88%AC%E9%9A%AA%E8%B2%BB%E7%8E%87%E8%A1%A8%E5%8F%8A%E7%94%B3%E6%A0%B9%E5%BC%8F%E8%B2%BB%E7%8E%87%E8%A1%A8%28114%E5%B9%B46%E6%9C%8821%E6%97%A5%E8%B5%B7%E8%87%B3115%E5%B9%B46%E6%9C%8820%E6%97%A5%E6%AD%A2%29.pdf",
+      "localPath": "sources/insurance-premiums-2025.pdf",
+      "sha256": "54e1e7d55bb66a9915e9d31ad3a70daed978e87571bd8bcb849e707c66bb4fee",
+      "retrievedAt": "2026-09-09T02:26:50.221849Z",
+      "listingUrl": "https://acc.nccu.edu.tw/content/%E6%97%85%E9%81%8B%E8%B2%BB",
+      "periodEvidence": "NCCU public attachment filename; period is not printed inside PDF"
+    },
+    {
+      "id": "nccu-insurance-2026",
+      "title": "一般險及申根險保費表 2026-06-21 至 2027-06-20",
+      "url": "https://acc.nccu.edu.tw/sites/default/files/%E3%80%8C%E5%9B%A0%E5%85%AC%E8%B5%B4%E5%9C%8B%E5%A4%96%E5%87%BA%E5%B7%AE%E6%88%96%E8%BF%94%E5%9C%8B%E8%BF%B0%E8%81%B7%E4%BA%BA%E5%93%A1%E7%B6%9C%E5%90%88%E4%BF%9D%E9%9A%AA%E3%80%8D%E5%85%B1%E5%90%8C%E4%BE%9B%E6%87%89%E5%A5%91%E7%B4%84%E4%BF%9D%E9%9A%AA%E8%B2%BB%E7%8E%87%E8%A1%A8%E4%B8%80%E8%88%AC%E9%9A%AA%E8%B2%BB%E7%8E%87%E8%A1%A8%E5%8F%8A%E7%94%B3%E6%A0%B9%E5%BC%8F%E8%B2%BB%E7%8E%87%E8%A1%A8%28115%E5%B9%B46%E6%9C%8821%E6%97%A5%E8%B5%B7%E8%87%B3116%E5%B9%B46%E6%9C%8820%E6%97%A5%E6%AD%A2%29.pdf",
+      "localPath": "sources/insurance-premiums-2026.pdf",
+      "sha256": "54e1e7d55bb66a9915e9d31ad3a70daed978e87571bd8bcb849e707c66bb4fee",
+      "retrievedAt": "2026-09-09T02:26:50.221849Z",
+      "listingUrl": "https://acc.nccu.edu.tw/content/%E6%97%85%E9%81%8B%E8%B2%BB",
+      "periodEvidence": "NCCU public attachment filename; period is not printed inside PDF"
+    }
+  ]
+}

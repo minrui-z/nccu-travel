@@ -1,0 +1,18 @@
+{
+  "results": [
+    "Blank receipt metadata downloads native XLS",
+    "Foreign expense automatically fills exact bank quote 32.42000",
+    "Manual rate persists across tabs",
+    "Reference date updates expense while cost tab is closed",
+    "Error link selects merged day and focuses exact field",
+    "Student template resets preview sheet semantics",
+    "Preview dialog supports Tab, Escape and focus restore",
+    "200 percent equivalent desktop width keeps draft actions, no page overflow",
+    "Capacity errors appear in check status",
+    "Worker constructor failure restores download button",
+    "Failed draft backup never reports successful clear",
+    "No page exceptions or external data requests"
+  ],
+  "errors": [],
+  "external": []
+}

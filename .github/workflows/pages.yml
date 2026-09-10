@@ -1,0 +1,103 @@
+name: Build and publish GitHub Pages
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      update_rates:
+        description: '更新公開匯率後發布'
+        type: boolean
+        default: false
+      history_start:
+        description: '選填補抓歷史起日 YYYY-MM-DD（至臺北昨日，與單日查詢擇一）'
+        type: string
+        required: false
+      quotation_date:
+        description: '選填歷史報價日期 YYYY-MM-DD（須早於臺北今日）'
+        type: string
+        required: false
+  schedule:
+    - cron: '23 10 * * *'
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    if: github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+      pages: write
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci
+      - run: npm run lint
+      - name: Test calculations, templates and official data readers
+        run: npm test
+      - name: Update verified public rates
+        if: github.event_name == 'schedule' || inputs.update_rates
+        id: rates
+        continue-on-error: true
+        env:
+          REQUESTED_QUOTATION_DATE: ${{ inputs.quotation_date }}
+          REQUESTED_HISTORY_START: ${{ inputs.history_start }}
+        run: |
+          if [ -n "$REQUESTED_QUOTATION_DATE" ] && [ -n "$REQUESTED_HISTORY_START" ]; then
+            echo 'Please select either a single date or a history start date.'
+            exit 1
+          fi
+          if [ -n "$REQUESTED_HISTORY_START" ]; then
+            node scripts/update-fx.mjs --start "$REQUESTED_HISTORY_START" --concurrency 3 --delay-ms 500
+          elif [ -n "$REQUESTED_QUOTATION_DATE" ]; then
+            node scripts/update-fx.mjs --date "$REQUESTED_QUOTATION_DATE"
+          else
+            node scripts/update-fx.mjs --days 7
+          fi
+      - name: Check reviewed rules and reference sources
+        if: github.event_name == 'schedule' || inputs.update_rates
+        id: references
+        continue-on-error: true
+        run: npm run check:references
+      - name: Retain verified snapshots in repository
+        if: github.event_name == 'schedule' || inputs.update_rates
+        run: |
+          git add public/data/fx public/data/sources/bot-*.csv
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Update verified public exchange-rate snapshots'
+          git push
+      - name: Report unavailable source
+        if: steps.rates.outcome == 'failure' || steps.references.outcome == 'failure'
+        run: echo '::warning::官方資料未能完整驗證。已保留最後有效資料，請查看紀錄；缺漏日期不代表休市。'
+      - name: Build static website
+        run: npm run build
+      - name: Verify static asset paths
+        run: npm run test:build
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy verified static files
+        id: deployment
+        uses: actions/deploy-pages@v4

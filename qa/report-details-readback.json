@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "reader": "xlrd 2.0.2",
+  "files": [
+    "browser-general.xls",
+    "browser-general-blank-location.xls",
+    "browser-student.xls",
+    "browser-student-blank-location.xls"
+  ],
+  "checkedCells": 462,
+  "userDraftModified": false
+}

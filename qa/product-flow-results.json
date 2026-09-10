@@ -1,0 +1,26 @@
+{
+  "results": [
+    "New report starts without inline errors; required and optional labels are visible",
+    "Next and previous steps preserve input and reveal errors only after interaction",
+    "Dates commit atomically, pending values survive navigation",
+    "Capped claim is primary, amount difference remains distinct",
+    "Private day keeps its label and optional location without financial fields",
+    "Shortening dates can cancel, then preserves affected expenses on apply",
+    "Merge mode is separate, merged edits stay together, undo preserves edits",
+    "Expense list opens only one editor and preserves independent exchange rates",
+    "Expense addition asks category first and accepts blank receipt number",
+    "Export validation opens the precise collapsed expense input",
+    "Report download is native XLS with blank receipt identifiers",
+    "Read-only examples never access draft storage, edit, or download",
+    "Reset saves a previous draft, including across reload, and restore returns it",
+    "Failed backup preserves the current draft and does not show success",
+    "Whole-page preview and controls fit 1280x800 and 1440x900",
+    "Long editing keeps navigation, claim amount, and download available",
+    "Preview enlargement supports Escape and restores focus",
+    "200% equivalent viewport uses one column with a preview switch",
+    "Visible pages contain no developer jargon and request no backend"
+  ],
+  "failures": [],
+  "errors": [],
+  "external": []
+}

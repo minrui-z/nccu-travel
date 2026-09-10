@@ -1,0 +1,3 @@
+# Preserve official downloads exactly for source checksum verification.
+public/data/sources/* -text
+public/templates/*.xls -text

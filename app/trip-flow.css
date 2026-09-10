@@ -1,0 +1,105 @@
+.trip-pending-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.25rem 0.65rem;
+  margin-top: 0.55rem;
+  color: #34516b;
+  font-size: 0.84rem;
+}
+.trip-location-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding-block: 0.25rem;
+  color: #466078;
+  font-size: 0.78rem;
+}
+.trip-location-summary strong {
+  display: block;
+  color: #193955;
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-top: 0.3rem;
+}
+.date-groups.edit-mode .date-group {
+  padding-left: 0;
+}
+.date-groups.edit-mode .date-group-edit {
+  width: 100%;
+  padding-left: 0.8rem;
+}
+.date-groups.merge-mode .date-group-edit {
+  cursor: pointer;
+}
+.trip-rate-settings {
+  margin-block: 0.35rem 0.7rem;
+  border-block: 1px solid #d6dee7;
+  padding: 0.8rem 0;
+  min-width: 0;
+}
+.trip-rate-settings > summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+  cursor: pointer;
+  color: #193955;
+  list-style: none;
+  font-size: 0.85rem;
+}
+.trip-rate-settings > summary::-webkit-details-marker {
+  display: none;
+}
+.trip-rate-settings > summary strong {
+  display: block;
+  font-size: 1rem;
+  font-variant-numeric: tabular-nums;
+  margin-top: 0.25rem;
+}
+.trip-rate-settings > summary > span:last-child {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  text-align: right;
+  color: #466078;
+  font-size: 0.8rem;
+}
+.trip-rate-settings[open] > summary {
+  margin-bottom: 1rem;
+}
+.trip-rate-settings[open] > summary svg {
+  transform: rotate(90deg);
+}
+.trip-rate-settings > summary:focus-visible {
+  outline: 2px solid #245fde;
+  outline-offset: 5px;
+}
+.trip-rate-settings .fields {
+  margin-top: 0.8rem;
+}
+.fx-panel > summary .trip-fx-title {
+  display: block;
+  margin-left: 0;
+  color: #193955;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.trip-fx-title small {
+  display: block;
+  margin-top: 0.35rem;
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: #466078;
+}
+.fx-panel summary .trip-fx-value {
+  color: #193955;
+  font-variant-numeric: tabular-nums;
+}
+@media (max-width: 700px) {
+  .trip-rate-settings > summary,
+  .fx-panel > summary {
+    flex-wrap: wrap;
+  }
+}

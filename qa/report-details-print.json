@@ -1,0 +1,332 @@
+{
+  "fontLimitation": "Original 標楷體 / DFKai-SB is unavailable. This QA explicitly substitutes the installed KaiTi font; PMingLiU is available. Native XLS font declarations are preserved.",
+  "reports": [
+    {
+      "name": "student-7",
+      "pageCount": 1,
+      "pages": [
+        {
+          "width": 595.303937007874,
+          "height": 841.889763779528,
+          "a4Portrait": true
+        }
+      ],
+      "mainA4": true,
+      "fontsInXls": [
+        "Dummy Font",
+        "新細明體",
+        "標楷體"
+      ],
+      "fontsInPdf": [
+        "/BAAAAA+KaiTi",
+        "/CAAAAA+PMingLiU"
+      ],
+      "livingCells": [
+        {
+          "row": 18,
+          "column": 3,
+          "type": 1,
+          "value": "320×30%=96"
+        },
+        {
+          "row": 18,
+          "column": 4,
+          "type": 6,
+          "value": ""
+        },
+        {
+          "row": 18,
+          "column": 5,
+          "type": 1,
+          "value": "395×30%=118.5"
+        },
+        {
+          "row": 18,
+          "column": 6,
+          "type": 6,
+          "value": ""
+        },
+        {
+          "row": 18,
+          "column": 7,
+          "type": 1,
+          "value": "395×4=1580"
+        },
+        {
+          "row": 18,
+          "column": 8,
+          "type": 6,
+          "value": ""
+        },
+        {
+          "row": 18,
+          "column": 9,
+          "type": 6,
+          "value": ""
+        },
+        {
+          "row": 18,
+          "column": 10,
+          "type": 6,
+          "value": ""
+        },
+        {
+          "row": 18,
+          "column": 11,
+          "type": 1,
+          "value": "395×30%=118.5"
+        },
+        {
+          "row": 18,
+          "column": 12,
+          "type": 6,
+          "value": ""
+        },
+        {
+          "row": 18,
+          "column": 13,
+          "type": 1,
+          "value": "395×30%=118.5"
+        },
+        {
+          "row": 18,
+          "column": 14,
+          "type": 1,
+          "value": "320×30%=96"
+        }
+      ],
+      "formulaTextChecks": [
+        {
+          "cell": "G17",
+          "value": "US$50×31.80000\n=NT$1590",
+          "inPdfWithoutWhitespace": true
+        },
+        {
+          "cell": "C18",
+          "value": "320×30%=96",
+          "inPdfWithoutWhitespace": true
+        },
+        {
+          "cell": "E18",
+          "value": "395×30%=118.5",
+          "inPdfWithoutWhitespace": true
+        },
+        {
+          "cell": "G18",
+          "value": "395×4=1580",
+          "inPdfWithoutWhitespace": true
+        },
+        {
+          "cell": "K18",
+          "value": "395×30%=118.5",
+          "inPdfWithoutWhitespace": true
+        },
+        {
+          "cell": "M18",
+          "value": "395×30%=118.5",
+          "inPdfWithoutWhitespace": true
+        },
+        {
+          "cell": "N18",
+          "value": "320×30%=96",
+          "inPdfWithoutWhitespace": true
+        },
+        {
+          "cell": "K19",
+          "value": "EUR15.5×37.31000\n=NT$578.305",
+          "inPdfWithoutWhitespace": true
+        },
+        {
+          "cell": "E21",
+          "value": "US$350×31.95500\n=NT$11184.25",
+          "inPdfWithoutWhitespace": true
+        },
+        {
+          "cell": "C26",
+          "value": "費用格「×」後為各筆外幣折合臺幣匯率。 核定上限NT$36,000；超額NT$84,336自行負擔，不向本案報支。 匿名驗證",
+          "inPdfWithoutWhitespace": true
+        }
+      ]
+    },
+    {
+      "name": "general-7",
+      "pageCount": 2,
+      "pages": [
+        {
+          "width": 595.303937007874,
+          "height": 841.889763779528,
+          "a4Portrait": true
+        },
+        {
+          "width": 595.303937007874,
+          "height": 841.889763779528,
+          "a4Portrait": true
+        }
+      ],
+      "mainA4": true,
+      "fontsInXls": [
+        "Dummy Font",
+        "Segoe UI Symbol",
+        "Times New Roman",
+        "新細明體",
+        "標楷體"
+      ],
+      "fontsInPdf": [
+        "/BAAAAA+KaiTi",
+        "/CAAAAA+TimesNewRomanPSMT",
+        "/DAAAAA+PMingLiU",
+        "/EAAAAA+TimesNewRomanPS-BoldMT",
+        "/FAAAAA+SegoeUISymbol"
+      ],
+      "livingCells": [
+        {
+          "row": 18,
+          "column": 3,
+          "type": 1,
+          "value": "320×30%=96"
+        },
+        {
+          "row": 18,
+          "column": 4,
+          "type": 6,
+          "value": ""
+        },
+        {
+          "row": 18,
+          "column": 5,
+          "type": 1,
+          "value": "395×30%=118.5"
+        },
+        {
+          "row": 18,
+          "column": 6,
+          "type": 6,
+          "value": ""
+        },
+        {
+          "row": 18,
+          "column": 7,
+          "type": 1,
+          "value": "395×4=1580"
+        },
+        {
+          "row": 18,
+          "column": 8,
+          "type": 6,
+          "value": ""
+        },
+        {
+          "row": 18,
+          "column": 9,
+          "type": 6,
+          "value": ""
+        },
+        {
+          "row": 18,
+          "column": 10,
+          "type": 6,
+          "value": ""
+        },
+        {
+          "row": 18,
+          "column": 11,
+          "type": 1,
+          "value": "395×30%=118.5"
+        },
+        {
+          "row": 18,
+          "column": 12,
+          "type": 6,
+          "value": ""
+        },
+        {
+          "row": 18,
+          "column": 13,
+          "type": 1,
+          "value": "118.5"
+        },
+        {
+          "row": 18,
+          "column": 14,
+          "type": 1,
+          "value": "96"
+        }
+      ],
+      "formulaTextChecks": [
+        {
+          "cell": "G17",
+          "value": "US$50×31.80000\n=NT$1590",
+          "inPdfWithoutWhitespace": true
+        },
+        {
+          "cell": "C18",
+          "value": "320×30%=96",
+          "inPdfWithoutWhitespace": true
+        },
+        {
+          "cell": "E18",
+          "value": "395×30%=118.5",
+          "inPdfWithoutWhitespace": true
+        },
+        {
+          "cell": "G18",
+          "value": "395×4=1580",
+          "inPdfWithoutWhitespace": true
+        },
+        {
+          "cell": "K18",
+          "value": "395×30%=118.5",
+          "inPdfWithoutWhitespace": true
+        },
+        {
+          "cell": "C26",
+          "value": "1、出差人員是否搭乘「基礎等級(標準)座艙位」：是☑  否□。\n2、出差人員是否為簡任十二職等以上，領有各該職等全額主管加給人員：是□  否☑。(如是，且搭乘非基礎艙位者應加填附表)。\n費用格「×」後為各筆外幣折合臺幣匯率。 [2]9/2行政費：US$350×31.95500=NT$11184.25。 [4]9/10手續費：EUR15.5×37.31000=NT$578.305。 扣除欄「無」表示無免費供餐。 生活費（美元）：395×30%=118.5；320×30%=96。 匿名驗證",
+          "inPdfWithoutWhitespace": true
+        }
+      ]
+    }
+  ],
+  "visualReview": {
+    "student": "Passed in the stated font environment: living results and every expense exchange rate complete; private location/work retained, monetary cells blank; one A4 page.",
+    "general": "Passed in the stated font environment: G17 and C26 no longer clipped; each complete exchange-rate calculation is inside its cell or referenced in notes; main form one A4 page plus original appendix.",
+    "checkedGeneralInkBounds": {
+      "G17": {
+        "inkTop": 414.04666777952804,
+        "inkBottom": 440.44266777952805,
+        "cellTop": 411.975,
+        "cellBottom": 441.643,
+        "withinVerticalCell": true
+      },
+      "C26": {
+        "inkTop": 645.0240237795281,
+        "inkBottom": 697.007507779528,
+        "cellTop": 641.759,
+        "cellBottom": 699.941,
+        "withinVerticalCell": true
+      }
+    },
+    "exactOriginalFontComparison": false
+  },
+  "independentReadback": [
+    {
+      "name": "student",
+      "sha256": "8c03d1d226425e03417c3dfa7310efb9ba4a4200b32ad15762bedb3952090748",
+      "checkedCells": 115,
+      "mismatches": [],
+      "fontZero": {
+        "name": "新細明體",
+        "size": 12.0
+      }
+    },
+    {
+      "name": "general",
+      "sha256": "1682da714876fb8da56750d0e2ad5249e620d9568cd49910b38bde7019dda92d",
+      "checkedCells": 116,
+      "mismatches": [],
+      "fontZero": {
+        "name": "新細明體",
+        "size": 12.0
+      }
+    }
+  ]
+}

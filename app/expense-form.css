@@ -1,0 +1,195 @@
+.expense-category-picker {
+  margin: 20px 0 24px;
+}
+.expense-category-picker h3 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 650;
+}
+.expense-category-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+.expense-category-options button {
+  min-height: 40px;
+}
+.expense-list:has(.expense-entry) {
+  gap: 0;
+  border-top: 1px solid var(--border);
+}
+.expense-list .expense-entry {
+  padding: 0;
+  border: 0;
+  border-bottom: 1px solid var(--border);
+  border-radius: 0;
+  background: var(--background);
+}
+.expense-entry .expense-card-heading {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0;
+}
+.expense-entry .expense-card-heading h3 {
+  flex: 1;
+  min-width: 0;
+  margin: 0;
+  font-size: 14px;
+}
+.expense-entry .expense-card-heading .expense-row-toggle {
+  width: 100%;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(105px, 0.65fr) 18px;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 8px 18px 0;
+  text-align: left;
+  color: var(--foreground);
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  font: inherit;
+  cursor: pointer;
+}
+.expense-row-toggle:hover .expense-row-title {
+  color: var(--primary);
+}
+.expense-row-toggle:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 3px;
+}
+.expense-row-copy,
+.expense-row-value {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.expense-row-title {
+  font-size: 15px;
+  font-weight: 650;
+}
+.expense-row-description {
+  font-size: 13px;
+  font-weight: 450;
+  overflow-wrap: anywhere;
+}
+.expense-row-meta {
+  color: var(--muted-foreground);
+  font-size: 12px;
+  line-height: 1.65;
+  font-weight: 450;
+  font-variant-numeric: tabular-nums;
+  overflow-wrap: anywhere;
+}
+.expense-row-value {
+  text-align: right;
+  align-items: flex-end;
+}
+.expense-row-value strong {
+  font-size: 15px;
+  font-weight: 650;
+  font-variant-numeric: tabular-nums;
+  overflow-wrap: anywhere;
+  max-width: 100%;
+}
+.expense-completion {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--muted-foreground);
+  font-size: 12px;
+  font-weight: 450;
+}
+.expense-completion.complete {
+  color: var(--foreground);
+}
+.expense-expand-icon {
+  transition: transform 160ms ease-out;
+}
+.expense-entry.is-expanded .expense-expand-icon {
+  transform: rotate(180deg);
+}
+.expense-editor {
+  padding: 8px 0 24px;
+}
+.expense-editor > .fields {
+  margin-top: 0;
+}
+.expense-entry .expense-detail-block {
+  border: 0;
+  border-top: 1px solid var(--border);
+  background: transparent;
+  padding: 20px 0 0;
+  border-radius: 0;
+  margin: 24px 0;
+}
+.expense-fx-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.expense-fx-summary > div {
+  min-width: 0;
+}
+.expense-fx-summary strong {
+  display: block;
+  font-size: 14px;
+  font-variant-numeric: tabular-nums;
+  overflow-wrap: anywhere;
+}
+.expense-fx-summary p {
+  margin: 5px 0 0;
+  color: var(--muted-foreground);
+  font-size: 12px;
+  line-height: 1.65;
+}
+.expense-fx-summary button {
+  flex-shrink: 0;
+}
+.expense-editor-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+.expense-editor-footer > span {
+  color: var(--muted-foreground);
+  font-size: 12px;
+}
+.expense-editor .insurance-lookup {
+  border: 0;
+  padding: 0;
+  background: transparent;
+}
+@media (max-width: 760px) {
+  .expense-entry .expense-card-heading .expense-row-toggle {
+    grid-template-columns: minmax(0, 1fr) 18px;
+    gap: 10px;
+  }
+  .expense-row-copy {
+    grid-column: 1;
+  }
+  .expense-row-value {
+    grid-column: 1;
+    text-align: left;
+    align-items: flex-start;
+  }
+  .expense-expand-icon {
+    grid-column: 2;
+    grid-row: 1 / 3;
+  }
+  .expense-fx-summary {
+    align-items: flex-start;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .expense-expand-icon {
+    transition: none;
+  }
+}

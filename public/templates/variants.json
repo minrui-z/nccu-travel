@@ -1,0 +1,842 @@
+[
+  {
+    "id": "general-1",
+    "kind": "general",
+    "segmentCount": 1,
+    "file": "general-1.xls",
+    "sheetName": "國外",
+    "ranges": [
+      [
+        2,
+        13
+      ]
+    ]
+  },
+  {
+    "id": "general-2",
+    "kind": "general",
+    "segmentCount": 2,
+    "file": "general-2.xls",
+    "sheetName": "國外",
+    "ranges": [
+      [
+        2,
+        7
+      ],
+      [
+        8,
+        13
+      ]
+    ]
+  },
+  {
+    "id": "general-3",
+    "kind": "general",
+    "segmentCount": 3,
+    "file": "general-3.xls",
+    "sheetName": "國外",
+    "ranges": [
+      [
+        2,
+        5
+      ],
+      [
+        6,
+        9
+      ],
+      [
+        10,
+        13
+      ]
+    ]
+  },
+  {
+    "id": "general-4",
+    "kind": "general",
+    "segmentCount": 4,
+    "file": "general-4.xls",
+    "sheetName": "國外",
+    "ranges": [
+      [
+        2,
+        4
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        8,
+        10
+      ],
+      [
+        11,
+        13
+      ]
+    ]
+  },
+  {
+    "id": "general-5",
+    "kind": "general",
+    "segmentCount": 5,
+    "file": "general-5.xls",
+    "sheetName": "國外",
+    "ranges": [
+      [
+        2,
+        3
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        6,
+        8
+      ],
+      [
+        9,
+        10
+      ],
+      [
+        11,
+        13
+      ]
+    ]
+  },
+  {
+    "id": "general-6",
+    "kind": "general",
+    "segmentCount": 6,
+    "file": "general-6.xls",
+    "sheetName": "國外",
+    "ranges": [
+      [
+        2,
+        3
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        8,
+        9
+      ],
+      [
+        10,
+        11
+      ],
+      [
+        12,
+        13
+      ]
+    ]
+  },
+  {
+    "id": "general-7",
+    "kind": "general",
+    "segmentCount": 7,
+    "file": "general-7.xls",
+    "sheetName": "國外",
+    "ranges": [
+      [
+        2,
+        3
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        8,
+        9
+      ],
+      [
+        10,
+        11
+      ],
+      [
+        12,
+        12
+      ],
+      [
+        13,
+        13
+      ]
+    ]
+  },
+  {
+    "id": "general-8",
+    "kind": "general",
+    "segmentCount": 8,
+    "file": "general-8.xls",
+    "sheetName": "國外",
+    "ranges": [
+      [
+        2,
+        3
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        8,
+        9
+      ],
+      [
+        10,
+        10
+      ],
+      [
+        11,
+        11
+      ],
+      [
+        12,
+        12
+      ],
+      [
+        13,
+        13
+      ]
+    ]
+  },
+  {
+    "id": "general-9",
+    "kind": "general",
+    "segmentCount": 9,
+    "file": "general-9.xls",
+    "sheetName": "國外",
+    "ranges": [
+      [
+        2,
+        3
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        8,
+        8
+      ],
+      [
+        9,
+        9
+      ],
+      [
+        10,
+        10
+      ],
+      [
+        11,
+        11
+      ],
+      [
+        12,
+        12
+      ],
+      [
+        13,
+        13
+      ]
+    ]
+  },
+  {
+    "id": "general-10",
+    "kind": "general",
+    "segmentCount": 10,
+    "file": "general-10.xls",
+    "sheetName": "國外",
+    "ranges": [
+      [
+        2,
+        3
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        6,
+        6
+      ],
+      [
+        7,
+        7
+      ],
+      [
+        8,
+        8
+      ],
+      [
+        9,
+        9
+      ],
+      [
+        10,
+        10
+      ],
+      [
+        11,
+        11
+      ],
+      [
+        12,
+        12
+      ],
+      [
+        13,
+        13
+      ]
+    ]
+  },
+  {
+    "id": "general-11",
+    "kind": "general",
+    "segmentCount": 11,
+    "file": "general-11.xls",
+    "sheetName": "國外",
+    "ranges": [
+      [
+        2,
+        3
+      ],
+      [
+        4,
+        4
+      ],
+      [
+        5,
+        5
+      ],
+      [
+        6,
+        6
+      ],
+      [
+        7,
+        7
+      ],
+      [
+        8,
+        8
+      ],
+      [
+        9,
+        9
+      ],
+      [
+        10,
+        10
+      ],
+      [
+        11,
+        11
+      ],
+      [
+        12,
+        12
+      ],
+      [
+        13,
+        13
+      ]
+    ]
+  },
+  {
+    "id": "general-12",
+    "kind": "general",
+    "segmentCount": 12,
+    "file": "general-12.xls",
+    "sheetName": "國外",
+    "ranges": [
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        3
+      ],
+      [
+        4,
+        4
+      ],
+      [
+        5,
+        5
+      ],
+      [
+        6,
+        6
+      ],
+      [
+        7,
+        7
+      ],
+      [
+        8,
+        8
+      ],
+      [
+        9,
+        9
+      ],
+      [
+        10,
+        10
+      ],
+      [
+        11,
+        11
+      ],
+      [
+        12,
+        12
+      ],
+      [
+        13,
+        13
+      ]
+    ]
+  },
+  {
+    "id": "student-1",
+    "kind": "student",
+    "segmentCount": 1,
+    "file": "student-1.xls",
+    "sheetName": "國外學",
+    "ranges": [
+      [
+        2,
+        13
+      ]
+    ]
+  },
+  {
+    "id": "student-2",
+    "kind": "student",
+    "segmentCount": 2,
+    "file": "student-2.xls",
+    "sheetName": "國外學",
+    "ranges": [
+      [
+        2,
+        7
+      ],
+      [
+        8,
+        13
+      ]
+    ]
+  },
+  {
+    "id": "student-3",
+    "kind": "student",
+    "segmentCount": 3,
+    "file": "student-3.xls",
+    "sheetName": "國外學",
+    "ranges": [
+      [
+        2,
+        5
+      ],
+      [
+        6,
+        9
+      ],
+      [
+        10,
+        13
+      ]
+    ]
+  },
+  {
+    "id": "student-4",
+    "kind": "student",
+    "segmentCount": 4,
+    "file": "student-4.xls",
+    "sheetName": "國外學",
+    "ranges": [
+      [
+        2,
+        4
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        8,
+        10
+      ],
+      [
+        11,
+        13
+      ]
+    ]
+  },
+  {
+    "id": "student-5",
+    "kind": "student",
+    "segmentCount": 5,
+    "file": "student-5.xls",
+    "sheetName": "國外學",
+    "ranges": [
+      [
+        2,
+        3
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        6,
+        8
+      ],
+      [
+        9,
+        10
+      ],
+      [
+        11,
+        13
+      ]
+    ]
+  },
+  {
+    "id": "student-6",
+    "kind": "student",
+    "segmentCount": 6,
+    "file": "student-6.xls",
+    "sheetName": "國外學",
+    "ranges": [
+      [
+        2,
+        3
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        8,
+        9
+      ],
+      [
+        10,
+        11
+      ],
+      [
+        12,
+        13
+      ]
+    ]
+  },
+  {
+    "id": "student-7",
+    "kind": "student",
+    "segmentCount": 7,
+    "file": "student-7.xls",
+    "sheetName": "國外學",
+    "ranges": [
+      [
+        2,
+        3
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        8,
+        9
+      ],
+      [
+        10,
+        11
+      ],
+      [
+        12,
+        12
+      ],
+      [
+        13,
+        13
+      ]
+    ]
+  },
+  {
+    "id": "student-8",
+    "kind": "student",
+    "segmentCount": 8,
+    "file": "student-8.xls",
+    "sheetName": "國外學",
+    "ranges": [
+      [
+        2,
+        3
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        8,
+        9
+      ],
+      [
+        10,
+        10
+      ],
+      [
+        11,
+        11
+      ],
+      [
+        12,
+        12
+      ],
+      [
+        13,
+        13
+      ]
+    ]
+  },
+  {
+    "id": "student-9",
+    "kind": "student",
+    "segmentCount": 9,
+    "file": "student-9.xls",
+    "sheetName": "國外學",
+    "ranges": [
+      [
+        2,
+        3
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        8,
+        8
+      ],
+      [
+        9,
+        9
+      ],
+      [
+        10,
+        10
+      ],
+      [
+        11,
+        11
+      ],
+      [
+        12,
+        12
+      ],
+      [
+        13,
+        13
+      ]
+    ]
+  },
+  {
+    "id": "student-10",
+    "kind": "student",
+    "segmentCount": 10,
+    "file": "student-10.xls",
+    "sheetName": "國外學",
+    "ranges": [
+      [
+        2,
+        3
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        6,
+        6
+      ],
+      [
+        7,
+        7
+      ],
+      [
+        8,
+        8
+      ],
+      [
+        9,
+        9
+      ],
+      [
+        10,
+        10
+      ],
+      [
+        11,
+        11
+      ],
+      [
+        12,
+        12
+      ],
+      [
+        13,
+        13
+      ]
+    ]
+  },
+  {
+    "id": "student-11",
+    "kind": "student",
+    "segmentCount": 11,
+    "file": "student-11.xls",
+    "sheetName": "國外學",
+    "ranges": [
+      [
+        2,
+        3
+      ],
+      [
+        4,
+        4
+      ],
+      [
+        5,
+        5
+      ],
+      [
+        6,
+        6
+      ],
+      [
+        7,
+        7
+      ],
+      [
+        8,
+        8
+      ],
+      [
+        9,
+        9
+      ],
+      [
+        10,
+        10
+      ],
+      [
+        11,
+        11
+      ],
+      [
+        12,
+        12
+      ],
+      [
+        13,
+        13
+      ]
+    ]
+  },
+  {
+    "id": "student-12",
+    "kind": "student",
+    "segmentCount": 12,
+    "file": "student-12.xls",
+    "sheetName": "國外學",
+    "ranges": [
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        3
+      ],
+      [
+        4,
+        4
+      ],
+      [
+        5,
+        5
+      ],
+      [
+        6,
+        6
+      ],
+      [
+        7,
+        7
+      ],
+      [
+        8,
+        8
+      ],
+      [
+        9,
+        9
+      ],
+      [
+        10,
+        10
+      ],
+      [
+        11,
+        11
+      ],
+      [
+        12,
+        12
+      ],
+      [
+        13,
+        13
+      ]
+    ]
+  }
+]

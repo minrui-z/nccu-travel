@@ -1,0 +1,5 @@
+Third-party notices for the distributed browser assets.
+Fonts: Noto Sans TC and Noto Serif TC, SIL Open Font License.
+CFB 1.2.2: the browser build removes only an obsolete global require guard before CommonJS conversion. XLS parser and writer are unchanged. See docs/XLS.md in the source project.
+Other components retain their respective licenses in this directory.
+Official forms, rules and data are attributed in the project source documentation and public/data/source-manifest.json.

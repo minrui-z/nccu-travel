@@ -1,0 +1,209 @@
+.preview-pane.preview-workspace {
+  display: flex;
+  flex-direction: column;
+  min-height: 240px;
+  top: var(--preview-sticky-top, 20px);
+  align-self: start;
+  overflow: hidden;
+}
+
+.preview-workspace .preview-toolbar {
+  flex: 0 0 48px;
+  gap: 10px;
+  padding: 0 16px;
+}
+
+.preview-workspace .preview-toolbar > span:nth-child(2) {
+  margin-right: 0;
+}
+
+.preview-workspace .preview-toolbar button {
+  margin-left: 0;
+  min-height: 36px;
+}
+
+.preview-workspace .paper-tabs {
+  flex-shrink: 0;
+  gap: 16px;
+  padding: 0 16px;
+}
+
+.preview-workspace .paper-tabs button {
+  min-height: 36px;
+  font-size: 12px;
+}
+
+.preview-workspace .preview-viewport {
+  flex: 1 1 auto;
+  min-width: 0;
+  min-height: 0;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 18px;
+  overflow: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  scrollbar-color: #a1b2c3 #e3eaf1;
+}
+
+.preview-viewport.is-whole-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.preview-page-frame {
+  flex: none;
+  margin: 0 auto;
+  max-width: none;
+}
+
+.preview-workspace .report-svg {
+  width: 100%;
+  height: auto;
+  max-height: none;
+}
+
+.preview-workspace-dialog.preview-dialog {
+  width: min(1080px, calc(100vw - 40px));
+  height: calc(100dvh - 40px);
+  overflow: hidden;
+}
+
+.preview-workspace-dialog .preview-pane.preview-workspace-expanded {
+  position: static;
+  height: 100%;
+  min-height: 0;
+  border: 0;
+  border-radius: 0;
+  overflow: hidden;
+}
+
+.preview-zoom-options {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.preview-zoom-options button[aria-pressed='true'] {
+  color: var(--primary);
+  background: #dbe6f0;
+}
+
+.preview-review-notice {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 8px 16px;
+  flex-shrink: 0;
+  color: #875615;
+  background: #fff5e6;
+  border-top: 1px solid #ead8be;
+  font-size: 12px;
+}
+
+.preview-review-notice > span {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.preview-review-notice button {
+  color: inherit;
+  flex-shrink: 0;
+}
+
+.preview-workspace :is(button, [tabindex='0']):focus-visible,
+.review-form :is(summary, button):focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: -2px;
+}
+
+.review-form .review-claim-totals {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 18px 28px;
+  margin: 0 0 12px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+
+.review-form .review-claim-totals > div + div {
+  border: 0;
+  padding-left: 0;
+}
+
+.review-form .review-claim-primary strong {
+  font-size: 30px;
+  color: var(--foreground);
+  letter-spacing: -0.025em;
+}
+
+.review-form .review-claim-secondary strong {
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--muted-foreground);
+}
+
+.review-form .claim-unclaimed {
+  margin: 0 0 20px;
+}
+
+.review-form .check-status {
+  margin-top: 20px;
+}
+
+.review-blocking {
+  margin-top: 28px;
+}
+
+.review-form .calculation-details {
+  margin-top: 16px;
+}
+
+.review-form .issue-item {
+  align-items: flex-start;
+}
+
+.review-issue-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.review-form .issue-item > button {
+  flex-shrink: 0;
+}
+
+.review-related-fields {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 12px;
+  margin-top: 5px;
+}
+
+.review-form .review-related-fields button {
+  max-width: 100%;
+  margin: 0;
+  padding: 4px 0;
+  white-space: normal;
+  text-align: left;
+  height: auto;
+}
+
+@media (max-width: 800px) {
+  .preview-workspace .preview-toolbar {
+    gap: 6px;
+    padding: 0 10px;
+  }
+  .preview-workspace-dialog .preview-paper-kind {
+    display: none;
+  }
+  .preview-workspace .preview-viewport {
+    padding: 12px;
+  }
+}

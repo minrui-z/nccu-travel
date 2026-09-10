@@ -1,0 +1,38 @@
+{
+  "independentReader": "xlrd",
+  "unchangedCellValues": 462,
+  "onlyStylesChanged": "C14:M14",
+  "unchangedFonts": 35,
+  "unchangedStyles": 142,
+  "manifestAgreesWithXls": true,
+  "mixedPrivateCellsBlank": true,
+  "print": [
+    {
+      "file": "student-7.pdf",
+      "pages": 1,
+      "sizePt": [
+        595.303937007874,
+        841.889763779528
+      ],
+      "passed": true
+    },
+    {
+      "file": "student-7-private.pdf",
+      "pages": 1,
+      "sizePt": [
+        595.303937007874,
+        841.889763779528
+      ],
+      "passed": true
+    },
+    {
+      "file": "student-private-mixed.pdf",
+      "pages": 1,
+      "sizePt": [
+        595.303937007874,
+        841.889763779528
+      ],
+      "passed": true
+    }
+  ]
+}

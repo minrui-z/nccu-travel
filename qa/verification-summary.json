@@ -1,0 +1,643 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-09T21:17:19.133638+00:00",
+  "passed": true,
+  "nodeVersion": "v24.19.0",
+  "cfbVersion": "1.2.2",
+  "engineSha256": "069eb671b6b22631e98bc8100a1d87e0bdddffa9fc5712ecb4d201519cc8586a",
+  "checks": 5768,
+  "variantCount": 24,
+  "caseCount": 28,
+  "assets": {
+    "general-1": "3e1dedc6098e1a469267a13aee184ce23f91138e25048230de84ae149140936d",
+    "general-2": "e579c6944be174b70174ac5832968041475158683597e1227a2756d02e6477e7",
+    "general-3": "f40529670c7164929bed3bf19057c981a422980aa188383301d5b9fe69cd919c",
+    "general-4": "0e29c45c57552df2814396fa254f739017d179028484e08b704d0a5dec034d4d",
+    "general-5": "6e981c353d204247eb564ddeacb6e7c16474d59d533f1ddf8a6b8c42a103a36e",
+    "general-6": "1cb7a9a7620223a0cdaadd7ef0054c83764c2c0b6ffd775107a598f0d6766ae9",
+    "general-7": "8a38ea6392b00713b83bb74b25576c28b01f9c75b856575ae6e511067f9cc2c7",
+    "general-8": "e1fff61d0759f926ca8280abd739d434568657fc5abb1d473c850b42f7e72dd4",
+    "general-9": "3fb78a03f9c8cc268541c700d5d0652cc9925d31e26813bf2e98a3466a1066f5",
+    "general-10": "dc853251a01a34f5dd78d995ff9675a62c89103970b2ccc387bcc63569c840e9",
+    "general-11": "54647d85f8c12fadcfd2e54e02cf1f5e8e975883f030e35130ff1835b374c4be",
+    "general-12": "464b5ea640e4ae9882565604dff6b8834b6f2e190e1833d4dcb01955745cfe99",
+    "student-1": "a390ea24d19809b6069819e07ceda8d25ee504304596cd06b1f806aaa29817b2",
+    "student-2": "a735547d208bbb275f33d4bbde4853b66f140185f06f9c2820df3d8ea7b901b8",
+    "student-3": "f1a655e90f01e4f6a2a8e7ea43d5c4e5812dee163fe55e6aec3c5e1c6e144ba7",
+    "student-4": "bd75f0cf29bd28e5e23e1f14d2eecb8da746ffcf2b2ff2eb53414c15589c3ab3",
+    "student-5": "61bed6e1e1bf895019388618060e7a52c287bbc5688a1bcea5c6d71974da3f3d",
+    "student-6": "d27d2ab3a4daee24da129a817d3fc80665753759594c1950519d4086bd40af68",
+    "student-7": "a8c74a1a9d11d58119080a2dcaf059c52bd6b7962f2bdfa23b899c9d172f5760",
+    "student-8": "92ea7676f51e6d493bd396dac9aa5140c95f0ac9a84d66f55e6d98aaf648beda",
+    "student-9": "8ea196fefc41c21dd02998103efd90110f93d2d6b50b61b61fb999e3bda5ed6b",
+    "student-10": "3ea48e2b524c576cc8c6bee212e58483a893c3fe880986fdac800fdbd59164f2",
+    "student-11": "9c19bb1687bbb5bb7fa95cf5b7cc41b3ec1089f1080c9d9f41551949a55a071a",
+    "student-12": "2bb8ca8a87d5a946aa1f4d7728840d023164f02bd01ed1fc58e00e45dc04992e"
+  },
+  "reader": {
+    "passed": true,
+    "reader": "xlrd",
+    "version": "2.0.2",
+    "caseCount": 28,
+    "checkedCells": 2455
+  },
+  "print": {
+    "passed": true,
+    "variantCount": 24,
+    "fontConfiguration": "explicit font directories",
+    "singleRendererProcess": true,
+    "freshProfile": true,
+    "pixelIdentityVerified": false,
+    "results": [
+      {
+        "id": "general-1",
+        "pages": 2,
+        "expectedPages": 2,
+        "dimensionsPt": [
+          [
+            595.3,
+            841.89
+          ],
+          [
+            595.3,
+            841.89
+          ]
+        ],
+        "passed": true
+      },
+      {
+        "id": "general-2",
+        "pages": 2,
+        "expectedPages": 2,
+        "dimensionsPt": [
+          [
+            595.3,
+            841.89
+          ],
+          [
+            595.3,
+            841.89
+          ]
+        ],
+        "passed": true
+      },
+      {
+        "id": "general-3",
+        "pages": 2,
+        "expectedPages": 2,
+        "dimensionsPt": [
+          [
+            595.3,
+            841.89
+          ],
+          [
+            595.3,
+            841.89
+          ]
+        ],
+        "passed": true
+      },
+      {
+        "id": "general-4",
+        "pages": 2,
+        "expectedPages": 2,
+        "dimensionsPt": [
+          [
+            595.3,
+            841.89
+          ],
+          [
+            595.3,
+            841.89
+          ]
+        ],
+        "passed": true
+      },
+      {
+        "id": "general-5",
+        "pages": 2,
+        "expectedPages": 2,
+        "dimensionsPt": [
+          [
+            595.3,
+            841.89
+          ],
+          [
+            595.3,
+            841.89
+          ]
+        ],
+        "passed": true
+      },
+      {
+        "id": "general-6",
+        "pages": 2,
+        "expectedPages": 2,
+        "dimensionsPt": [
+          [
+            595.3,
+            841.89
+          ],
+          [
+            595.3,
+            841.89
+          ]
+        ],
+        "passed": true
+      },
+      {
+        "id": "general-7",
+        "pages": 2,
+        "expectedPages": 2,
+        "dimensionsPt": [
+          [
+            595.3,
+            841.89
+          ],
+          [
+            595.3,
+            841.89
+          ]
+        ],
+        "passed": true
+      },
+      {
+        "id": "general-8",
+        "pages": 2,
+        "expectedPages": 2,
+        "dimensionsPt": [
+          [
+            595.3,
+            841.89
+          ],
+          [
+            595.3,
+            841.89
+          ]
+        ],
+        "passed": true
+      },
+      {
+        "id": "general-9",
+        "pages": 2,
+        "expectedPages": 2,
+        "dimensionsPt": [
+          [
+            595.3,
+            841.89
+          ],
+          [
+            595.3,
+            841.89
+          ]
+        ],
+        "passed": true
+      },
+      {
+        "id": "general-10",
+        "pages": 2,
+        "expectedPages": 2,
+        "dimensionsPt": [
+          [
+            595.3,
+            841.89
+          ],
+          [
+            595.3,
+            841.89
+          ]
+        ],
+        "passed": true
+      },
+      {
+        "id": "general-11",
+        "pages": 2,
+        "expectedPages": 2,
+        "dimensionsPt": [
+          [
+            595.3,
+            841.89
+          ],
+          [
+            595.3,
+            841.89
+          ]
+        ],
+        "passed": true
+      },
+      {
+        "id": "general-12",
+        "pages": 2,
+        "expectedPages": 2,
+        "dimensionsPt": [
+          [
+            595.3,
+            841.89
+          ],
+          [
+            595.3,
+            841.89
+          ]
+        ],
+        "passed": true
+      },
+      {
+        "id": "student-1",
+        "pages": 1,
+        "expectedPages": 1,
+        "dimensionsPt": [
+          [
+            595.3,
+            841.89
+          ]
+        ],
+        "passed": true
+      },
+      {
+        "id": "student-2",
+        "pages": 1,
+        "expectedPages": 1,
+        "dimensionsPt": [
+          [
+            595.3,
+            841.89
+          ]
+        ],
+        "passed": true
+      },
+      {
+        "id": "student-3",
+        "pages": 1,
+        "expectedPages": 1,
+        "dimensionsPt": [
+          [
+            595.3,
+            841.89
+          ]
+        ],
+        "passed": true
+      },
+      {
+        "id": "student-4",
+        "pages": 1,
+        "expectedPages": 1,
+        "dimensionsPt": [
+          [
+            595.3,
+            841.89
+          ]
+        ],
+        "passed": true
+      },
+      {
+        "id": "student-5",
+        "pages": 1,
+        "expectedPages": 1,
+        "dimensionsPt": [
+          [
+            595.3,
+            841.89
+          ]
+        ],
+        "passed": true
+      },
+      {
+        "id": "student-6",
+        "pages": 1,
+        "expectedPages": 1,
+        "dimensionsPt": [
+          [
+            595.3,
+            841.89
+          ]
+        ],
+        "passed": true
+      },
+      {
+        "id": "student-7",
+        "pages": 1,
+        "expectedPages": 1,
+        "dimensionsPt": [
+          [
+            595.3,
+            841.89
+          ]
+        ],
+        "passed": true
+      },
+      {
+        "id": "student-8",
+        "pages": 1,
+        "expectedPages": 1,
+        "dimensionsPt": [
+          [
+            595.3,
+            841.89
+          ]
+        ],
+        "passed": true
+      },
+      {
+        "id": "student-9",
+        "pages": 1,
+        "expectedPages": 1,
+        "dimensionsPt": [
+          [
+            595.3,
+            841.89
+          ]
+        ],
+        "passed": true
+      },
+      {
+        "id": "student-10",
+        "pages": 1,
+        "expectedPages": 1,
+        "dimensionsPt": [
+          [
+            595.3,
+            841.89
+          ]
+        ],
+        "passed": true
+      },
+      {
+        "id": "student-11",
+        "pages": 1,
+        "expectedPages": 1,
+        "dimensionsPt": [
+          [
+            595.3,
+            841.89
+          ]
+        ],
+        "passed": true
+      },
+      {
+        "id": "student-12",
+        "pages": 1,
+        "expectedPages": 1,
+        "dimensionsPt": [
+          [
+            595.3,
+            841.89
+          ]
+        ],
+        "passed": true
+      }
+    ]
+  },
+  "websiteOutputBytesMatchRenderedCases": true,
+  "builtWorker": {
+    "passed": true,
+    "scenarioCount": 32,
+    "allColumnCounts": true,
+    "noNodeGlobals": true,
+    "mergedEditsAndTextFitting": true,
+    "privateDateExports": true
+  },
+  "unitTests": {
+    "passed": true,
+    "count": 143
+  },
+  "realClaimPrint": {
+    "passed": true,
+    "cases": [
+      {
+        "file": "claim-general-12.xls",
+        "pages": 2,
+        "a4Portrait": true,
+        "totalsFound": true,
+        "pixelIdentityVerified": false
+      },
+      {
+        "file": "claim-general-sample.xls",
+        "pages": 2,
+        "a4Portrait": true,
+        "totalsFound": true,
+        "pixelIdentityVerified": false
+      },
+      {
+        "file": "claim-student-12.xls",
+        "pages": 1,
+        "a4Portrait": true,
+        "totalsFound": true,
+        "pixelIdentityVerified": false
+      },
+      {
+        "file": "claim-student-sample.xls",
+        "pages": 1,
+        "a4Portrait": true,
+        "totalsFound": true,
+        "pixelIdentityVerified": false
+      }
+    ]
+  },
+  "browserRevision": {
+    "projectSubpath": "/nccu-travel/",
+    "nativeMouseSelection": true,
+    "incompatibleReasonVisible": true,
+    "splitMergeDatesPreserved": true,
+    "splitMergeTotal": 77759,
+    "studentCap": 70000,
+    "studentUnclaimed": 7759,
+    "downloadMessage": "XLS 已產生。",
+    "pendingLabelsRemoved": true
+  },
+  "locationPickerRevision": {
+    "passed": true,
+    "countryScopedCities": true,
+    "countryChangeClearsCity": true,
+    "taiwanRouteOnly": true,
+    "routeDoesNotChangeAllowance": true,
+    "allowanceDoesNotChangeRoute": true,
+    "draftRestore": true,
+    "nativeXlsIndependentRead": [
+      "general",
+      "student"
+    ],
+    "routeCell": "臺北→美國波士頓"
+  },
+  "textFitting": {
+    "nativeFiles": 26,
+    "exactCellsWithFontWrapAndRichText": 171,
+    "pdfChecks": [
+      {
+        "kind": "general",
+        "pages": 2,
+        "mainPage": "A4 portrait single page",
+        "purposeWorkNotes": "complete",
+        "allGlyphsInsidePage": true
+      },
+      {
+        "kind": "student",
+        "pages": 1,
+        "mainPage": "A4 portrait single page",
+        "purposeWorkNotes": "complete",
+        "allGlyphsInsidePage": true
+      }
+    ]
+  },
+  "mergedEditingRevision": {
+    "passed": true,
+    "allGroupDaysUpdated": true,
+    "mergePreservedOnEdit": true,
+    "explicitSplitAndMerge": true,
+    "draftRestore": true,
+    "multilinePreviewFontPt": 8.5,
+    "generalAndStudentBrowserExport": true,
+    "weekendAndTripApprovalEligibilityRemoved": true,
+    "privateDaysExcluded": true
+  },
+  "releaseTemplateCount": 25,
+  "supplementalTemplate": "student-7-private",
+  "privateSevenLayout": {
+    "independentReader": "xlrd",
+    "unchangedCellValues": 462,
+    "onlyStylesChanged": "C14:M14",
+    "unchangedFonts": 35,
+    "unchangedStyles": 142,
+    "manifestAgreesWithXls": true,
+    "mixedPrivateCellsBlank": true,
+    "print": [
+      {
+        "file": "student-7.pdf",
+        "pages": 1,
+        "sizePt": [
+          595.303937007874,
+          841.889763779528
+        ],
+        "passed": true
+      },
+      {
+        "file": "student-7-private.pdf",
+        "pages": 1,
+        "sizePt": [
+          595.303937007874,
+          841.889763779528
+        ],
+        "passed": true
+      },
+      {
+        "file": "student-private-mixed.pdf",
+        "pages": 1,
+        "sizePt": [
+          595.303937007874,
+          841.889763779528
+        ],
+        "passed": true
+      }
+    ]
+  },
+  "fxHistory": {
+    "requestedRange": {
+      "start": "2025-01-01",
+      "end": "2026-09-08"
+    },
+    "counts": {
+      "updated": 408,
+      "unchanged": 0,
+      "cached": 6,
+      "failed": 202,
+      "skipped": 0
+    },
+    "earliest": "2025-01-02",
+    "latest": "2026-09-08",
+    "snapshotsVerified": 414,
+    "currencies": [
+      "AUD",
+      "CAD",
+      "CHF",
+      "CNY",
+      "EUR",
+      "GBP",
+      "HKD",
+      "IDR",
+      "JPY",
+      "KRW",
+      "MYR",
+      "NZD",
+      "PHP",
+      "SEK",
+      "SGD",
+      "THB",
+      "USD",
+      "VND",
+      "ZAR"
+    ],
+    "reasonCounts": {
+      "MISSING_QUOTATION_DATE": 202
+    },
+    "missingWeekdays": [
+      "2025-01-01",
+      "2025-01-27",
+      "2025-01-28",
+      "2025-01-29",
+      "2025-01-30",
+      "2025-01-31",
+      "2025-02-28",
+      "2025-04-03",
+      "2025-04-04",
+      "2025-05-01",
+      "2025-05-30",
+      "2025-09-29",
+      "2025-10-06",
+      "2025-10-10",
+      "2025-10-24",
+      "2025-12-25",
+      "2026-01-01",
+      "2026-02-16",
+      "2026-02-17",
+      "2026-02-18",
+      "2026-02-19",
+      "2026-02-20",
+      "2026-02-27",
+      "2026-04-03",
+      "2026-04-06",
+      "2026-05-01",
+      "2026-06-19"
+    ],
+    "byYear": {
+      "2025": 246,
+      "2026": 168
+    },
+    "currencyCounts": {
+      "19": 414
+    },
+    "distinctUsdCashRates": 298
+  },
+  "privateDayRevision": {
+    "passed": true,
+    "mergedFieldsCleared": true,
+    "datesRetained": true,
+    "belowDateNativeBlank": true,
+    "restoredDraftBlank": true,
+    "independentPrivateRead": [
+      "general-private-4",
+      "student-private-7"
+    ],
+    "browserGeneralDownload": true,
+    "browserStudentSevenDownload": true
+  },
+  "selectionLogicAudit": {
+    "passed": true,
+    "regressionTests": 18,
+    "currencyDateSourceInvalidation": true,
+    "cardModeInvalidation": true,
+    "insuranceConfirmationInvalidation": true,
+    "inactiveCabinAndFundingGates": true,
+    "legacyFlightMeals": true,
+    "officialSeasonLookupRequiresCatalog": true,
+    "noSilentExpenseFxDateFallback": true,
+    "browserInsuranceDateInvalidation": true
+  },
+  "previewGlyphFitting": {
+    "actualBrowserMeasurement": true,
+    "cell": "C18",
+    "text": "268×30%=80.4",
+    "cellWidthPx": 54.597412109375,
+    "textWidthPx": 50.74395751953125,
+    "allShrinkCellsInside": true,
+    "nativeXlsUnchanged": true
+  }
+}

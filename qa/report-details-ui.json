@@ -1,0 +1,11 @@
+{
+  "results": [
+    "general: printed rates and complete calculation results match the XLS mapping",
+    "general: merged private location edits persist, stay merged, never populate allowance, and export with blank location",
+    "student: printed rates and complete calculation results match the XLS mapping",
+    "student: merged private location edits persist, stay merged, never populate allowance, and export with blank location",
+    "No browser errors or external data requests"
+  ],
+  "errors": [],
+  "external": []
+}
