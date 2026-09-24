@@ -30,9 +30,7 @@ a:hover { color: var(--link-hover); }
 .skip { position: absolute; left: 12px; top: -70px; z-index: 90; background: var(--ink); color: white; padding: 8px 12px; }
 .skip:focus { top: 10px; }
 .topbar { border-bottom: 1px solid var(--rule); background: var(--paper); }
-.topbar-inner { width: min(1120px, calc(100% - 48px)); min-height: 62px; margin: auto; display: flex; align-items: center; justify-content: space-between; gap: 18px; }
-.brand { color: var(--ink); text-decoration: none; font-size: .9rem; font-weight: 700; letter-spacing: .02em; }
-.brand:hover { color: var(--link); }
+.topbar-inner { width: min(1120px, calc(100% - 48px)); min-height: 62px; margin: auto; display: flex; align-items: center; justify-content: flex-end; gap: 18px; }
 .top-actions { display: flex; align-items: center; gap: 20px; }
 .top-note { color: var(--muted); font-size: .79rem; }
 .print-button { min-height: 44px; background: transparent; border: 0; border-bottom: 1px solid var(--link); color: var(--link); padding: 8px 0 6px; cursor: pointer; font-size: .86rem; font-weight: 600; }
@@ -174,7 +172,6 @@ dialog img { display: block; width: auto; max-width: 100%; max-height: calc(92vh
   <a class="skip" href="#main">跳到教學內容</a>
   <header class="topbar">
     <div class="topbar-inner">
-      <a class="brand" href="#top">工作手冊</a>
       <div class="top-actions"><span class="top-note">政大研究計畫</span><button class="print-button" type="button" id="print-page">列印</button></div>
     </div>
   </header>
