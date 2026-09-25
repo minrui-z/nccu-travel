@@ -39,7 +39,6 @@ a:hover { color: var(--link-hover); }
 .intro { padding: 45px 0 42px; }
 .intro h1 { margin: 0 0 8px; font-size: clamp(2rem, 3.5vw, 2.65rem); line-height: 1.28; font-weight: 700; letter-spacing: -.035em; }
 .intro-meta { color: var(--muted); font-size: .84rem; margin: 0; }
-.intro-note { border-left: 2px solid var(--rule); padding: 0 0 0 13px; margin: 20px 0 0; color: var(--muted); font-size: .88rem; max-width: 65ch; }
 .layout { display: grid; grid-template-columns: 196px minmax(0, 1fr); gap: 45px; align-items: start; }
 .rail { position: sticky; top: 28px; padding: 3px 0 25px; }
 .rail-title { margin: 0 0 12px; color: var(--muted); font-size: .76rem; font-weight: 700; }
@@ -47,8 +46,6 @@ a:hover { color: var(--link-hover); }
 .rail-nav a { display: block; margin-left: -1px; padding: 9px 12px; border-left: 2px solid transparent; color: var(--muted); text-decoration: none; font-size: .9rem; line-height: 1.45; }
 .rail-nav a:hover { color: var(--link); }
 .rail-nav a[aria-current="location"] { border-left-color: var(--link); color: var(--ink); font-weight: 700; }
-.rail-helper { border-top: 1px solid var(--rule); margin-top: 19px; padding-top: 15px; color: var(--muted); font-size: .78rem; line-height: 1.65; }
-.rail-helper p { margin: 0; }
 .content { min-width: 0; }
 .chapter { scroll-margin-top: 22px; border-top: 2px solid var(--ink); margin: 0 0 69px; }
 .chapter-head { padding: 27px 0 28px; border-bottom: 1px solid var(--rule); }
@@ -121,7 +118,7 @@ dialog img { display: block; width: auto; max-width: 100%; max-height: calc(92vh
 @media (max-width: 850px) {
   .layout { grid-template-columns: 1fr; gap: 0; }
   .rail { position: sticky; top: 0; z-index: 15; padding: 0; margin: 0 0 22px; background: var(--paper); border-bottom: 1px solid var(--rule); }
-  .rail-title, .rail-helper { display: none; }
+  .rail-title { display: none; }
   .rail-nav { display: flex; overflow-x: auto; white-space: nowrap; border-left: 0; scrollbar-width: thin; }
   .rail-nav a { margin: 0; min-height: 48px; padding: 11px 15px; border-left: 0; border-bottom: 2px solid transparent; }
   .rail-nav a[aria-current="location"] { border-left: 0; border-bottom-color: var(--link); }
@@ -132,7 +129,6 @@ dialog img { display: block; width: auto; max-width: 100%; max-height: calc(92vh
   .topbar-inner { min-height: 58px; }
   .top-note { display: none; }
   .intro { padding: 31px 0 28px; }
-  .intro-note { margin-top: 16px; }
   .chapter { margin-bottom: 51px; }
   .chapter-head { padding: 24px 0; }
   .chapter-body { padding-top: 22px; }
@@ -151,7 +147,6 @@ dialog img { display: block; width: auto; max-width: 100%; max-height: calc(92vh
   .shell { width: 100%; }
   .intro { padding: 0 0 6mm; }
   .intro h1 { font-size: 23pt; }
-  .intro-note { margin-top: 3mm; }
   .layout { display: block; }
   .chapter { border-top: 1.5pt solid black; margin: 0 0 10mm; break-inside: auto; }
   .chapter-head { padding: 4mm 0; break-after: avoid; }
@@ -179,7 +174,6 @@ dialog img { display: block; width: auto; max-width: 100%; max-height: calc(92vh
     <section class="intro" aria-labelledby="page-title">
       <h1 id="page-title">報帳流程</h1>
       <p class="intro-meta">交接資料 · 更新於 2026 年 9 月</p>
-      <p class="intro-note">國外差旅章節以 2026 年 1 月 1 日起的一般短期出差為例；其他案件請依核准文件及主計室規定核對。</p>
     </section>
     <div class="layout">
       <aside class="rail" aria-label="章節導覽">
@@ -190,7 +184,6 @@ dialog img { display: block; width: auto; max-width: 100%; max-height: calc(92vh
           <a href="#travel">國外差旅費</a>
           <a href="#project-change">專題計畫變更</a>
         </nav>
-        <div class="rail-helper"><p>勾選不會儲存；重新整理頁面會清空。點截圖可放大。</p></div>
       </aside>
       <main id="main" class="content">
         <section id="salary" class="chapter" aria-labelledby="salary-title">
@@ -417,49 +410,93 @@ dialog img { display: block; width: auto; max-width: 100%; max-height: calc(92vh
           <header class="chapter-head">
             <span class="chapter-index">04 / 國科會計畫</span>
             <h2 id="change-title">專題計畫變更</h2>
-            <p>計畫的主持人、執行期限、經費或出國種類等與核定內容不同時，先確認要變更的項目與審核單位，再請計畫主持人從國科會系統提出申請。</p>
+            <p>計畫內容需要變更時，使用計畫主持人的帳號登入國科會學術研發服務網，依變更項目填寫、上傳附件並送出。</p>
           </header>
           <div class="chapter-body">
-            <div class="callout">以下依<a href="https://ord.nccu.edu.tw/upfiles/download/%E7%A0%94%E7%A9%B6%E8%A8%88%E7%95%AB/%E5%9C%8B%E7%A7%91%E6%9C%83/20240903/%E5%B0%88%E9%A1%8C%E8%A8%88%E7%95%AB%E8%AE%8A%E6%9B%B4%E6%93%8D%E4%BD%9C%E6%89%8B%E5%86%8A.pdf" target="_blank" rel="noopener noreferrer">政大研究發展處提供的《專題計畫變更操作手冊》</a>整理系統操作。手冊畫面僅供參考；實際可申請項目、應附文件與審核方式，以案件核定資料、現行系統及校內承辦說明為準。</div>
+            <div class="callout">以下依<a href="https://ord.nccu.edu.tw/upfiles/download/%E7%A0%94%E7%A9%B6%E8%A8%88%E7%95%AB/%E5%9C%8B%E7%A7%91%E6%9C%83/20240903/%E5%B0%88%E9%A1%8C%E8%A8%88%E7%95%AB%E8%AE%8A%E6%9B%B4%E6%93%8D%E4%BD%9C%E6%89%8B%E5%86%8A.pdf" target="_blank" rel="noopener noreferrer">政大研究發展處的《專題計畫變更操作手冊》</a>整理。申請項目、附件與審核方式仍以系統及校內承辦通知為準。</div>
             <div class="check-panel" data-check-panel data-count-mode="selected">
               <div class="check-panel-head"><h3>辦理前準備</h3><span class="count" aria-live="polite">已勾選 0 項</span></div>
               <div class="check-list">
                 <label class="check-item"><input type="checkbox" autocomplete="off"><span><strong>計畫核定資料</strong><small>核對計畫編號、核定項目、期間與金額</small></span></label>
-                <label class="check-item"><input type="checkbox" autocomplete="off"><span><strong>變更內容與理由</strong><small>寫清楚要調整的人員、日期、出國種類或經費</small></span></label>
-                <label class="check-item"><input type="checkbox" autocomplete="off"><span><strong>對應證明文件</strong><small>依系統項目準備；人員變更另核對聘書與同意書</small></span></label>
-                <label class="check-item"><input type="checkbox" autocomplete="off"><span><strong>審核單位</strong><small>同時辦多項變更時，先分清國科會與執行機構</small></span></label>
+                <label class="check-item"><input type="checkbox" autocomplete="off"><span><strong>計畫主持人帳號</strong><small>登入學術研發服務網</small></span></label>
+                <label class="check-item"><input type="checkbox" autocomplete="off"><span><strong>變更內容與理由</strong><small>確認要調整的人員、日期、名稱或經費</small></span></label>
+                <label class="check-item"><input type="checkbox" autocomplete="off"><span><strong>證明文件</strong><small>依變更項目準備，並確認簽名與用印</small></span></label>
+                <label class="check-item"><input type="checkbox" autocomplete="off"><span><strong>審核單位</strong><small>國科會與執行機構審核的項目分開申請</small></span></label>
               </div>
             </div>
             <h3 class="step-heading">辦理步驟</h3>
             <ol class="step-list">
               <li class="step">
-                <h4>對照核定清單，確認要改的項目</h4>
-                <p>先比對原核定內容與實際需求。出國前若要調整經費、出國種類或其他計畫內容，請先把變更理由、金額與相關文件整理好；是否需要事前核准，先與校內承辦確認。</p>
+                <h4>登入計畫，開啟變更畫面</h4>
+                <p>從<a href="https://www.nstc.gov.tw/" target="_blank" rel="noopener noreferrer">國科會首頁</a>進入「學術研發服務網」，以計畫主持人帳號密碼登入。在「執行中計畫」找到要變更的計畫，按該列右側的變更圖示。主畫面只會顯示系統開放申請的項目。</p>
+                <div class="path" aria-label="國科會計畫變更系統路徑"><span>國科會首頁</span><b>→</b><span>學術研發服務網</span><b>→</b><span>執行中計畫</span><b>→</b><span>計畫右側變更圖示</span></div>
               </li>
               <li class="step">
-                <h4>請計畫主持人進入變更申請畫面</h4>
-                <p>請老師從國科會首頁登入「學術研發服務網」，在「執行中計畫」找到該計畫，點計畫右側的變更圖示。</p>
-                <div class="path" aria-label="國科會計畫變更系統路徑"><span>國科會首頁</span><b>→</b><span>學術研發服務網</span><b>→</b><span>執行中計畫</span><b>→</b><span>該計畫右側「變更」</span></div>
-              </li>
-              <li class="step">
-                <h4>選變更項目，確認審核單位</h4>
-                <p>系統會依變更項目顯示由國科會或執行機構審核。手冊列出的差旅相關項目如下；其他主持人、期限、名稱等變更也請按實際案件選擇。</p>
+                <h4>先按審核單位選申請項目</h4>
+                <p>手冊把可申請項目分成「國科會審核」與「執行機構審核」。若同時要改兩項以上、而且分屬不同審核單位，須分次提出申請。</p>
                 <table class="mini-table"><tbody>
-                  <tr><th scope="row">國科會審核</th><td>國外差旅費累計流出或流入超過計畫全程該項目原核定金額的 50%、原未核給補助項目的增列及經費追加。手冊也列有未發表論文的國際會議、移地研究衍生交通租金；增列研究設備費 5 萬元以下另有校內程序例外。</td></tr>
-                  <tr><th scope="row">執行機構審核</th><td>手冊列有國外差旅費未超過上述 50% 門檻的流用、研究設備費變更及國外差旅費出國種類變更。出國種類經校內同意後，由校內行政人員更新。</td></tr>
+                  <tr><th scope="row">國科會審核</th><td>更換主持人或共同主持人及其執行機關單位、計畫期限延期或縮短、計畫中英文名稱、計畫註銷或中止、國外差旅費流用超過 50% 與經費追加減、轉撥補助經費、未發表論文而出席國際學術會議、移地研究衍生的交通租金、產學加值鼓勵方案（ARRIVE）、鼓勵企業參與培育博士生方案。</td></tr>
+                  <tr><th scope="row">執行機構審核</th><td>主持人系所或共同主持人職稱變更、未超過 50% 的經費流用及研究設備費變更、國外差旅費出國種類變更。</td></tr>
                 </tbody></table>
-                <div class="link-row"><a class="action-link ghost" href="https://law.nstc.gov.tw/LawContent.aspx?id=GL000059" target="_blank" rel="noopener noreferrer">查國科會專題研究計畫經費處理原則</a></div>
-                <div class="callout warning">若多個變更項目分屬不同審核單位，請分次提出申請。</div>
+                <p>ARRIVE 與鼓勵企業參與培育博士生方案，手冊另外要求與其他變更項目分次提出申請。</p>
               </li>
               <li class="step">
-                <h4>填寫說明、上傳附件並正式送出</h4>
-                <p>依選擇的項目填寫變更後內容和理由，按畫面要求上傳附件。填好後再核對一次，按左上方「送出」；只按「存檔」仍是暫存，沒有完成申請。</p>
+                <h4>變更主持人、共同主持人、系所或職稱</h4>
+                <ul>
+                  <li><strong>更換主持人：</strong>按主持人姓名旁的編輯圖示，輸入新主持人姓名；系統帶入所屬機關、系所及職稱。填寫說明，並上傳新主持人的聘書及本人簽名的同意書，再按「存檔」。</li>
+                  <li><strong>更換主持人所屬機關系所：</strong>進入「主持人所屬機關系所代碼」畫面，用下拉選單選擇新單位，填寫說明後按「確認」。</li>
+                  <li><strong>新增或刪除共同主持人：</strong>在「主持人／共同主持人變更」畫面輸入姓名，核對系統帶入的所屬機關系所與職稱，填寫說明後按「確認」。被刪除者與被新增者，都要上傳各自簽名的同意書。</li>
+                  <li><strong>校內審核的系所、職稱變更：</strong>按欄位旁的編輯圖示，分別在「主持人所屬機關系所代碼」或「職稱變更」畫面用下拉選單選擇、填寫資料，再按「確認」。</li>
+                </ul>
+                <div class="callout warning">不要封鎖瀏覽器彈出式視窗。若姓名重複，系統會開啟同名同姓檢查視窗；選對人後按「設定」，資料才會帶回變更畫面。</div>
+              </li>
+              <li class="step">
+                <h4>變更期限、名稱，或辦理計畫註銷／中止</h4>
+                <ul>
+                  <li><strong>期限：</strong>用日曆選日期。「起」填原計畫期限的起日，「迄」填變更後的執行期限迄日；寫說明後按「存檔」。延期與縮短期限都在此辦理。</li>
+                  <li><strong>中英文名稱：</strong>填入變更後的中文及英文計畫名稱，再按「存檔」。</li>
+                  <li><strong>註銷或中止：</strong>計畫核定後未執行，或執行中不再繼續時，選相應項目；中止要用日曆選中止日期。務必填寫註銷或中止的說明，再按「存檔」。產學計畫另須上傳原合作企業的放棄聲明書，並蓋企業大、小章。</li>
+                </ul>
+              </li>
+              <li class="step">
+                <h4>辦理經費流用、項目增列或經費追加</h4>
+                <p>在「計畫經費變更」選擇「經費流用及異動說明」「經費變更」或「經費追加」，填流出、流入金額與異動理由。多年期計畫先切到要變更的年度。涉及國外差旅費流出或流入時，核對累計金額是否超過計畫全程該項目原核定金額的 50%；超過者由國科會審核。執行機構審核畫面則有未超過門檻的經費流用及研究設備費變更。</p>
+                <p>原本未核給的業務費、研究設備費或國外差旅費，若執行期間確有需要，原則上由執行機構事先報國科會同意增列，經費由其他補助項目流用。增列研究設備費在新臺幣 5 萬元以下，可依機構內部程序辦理。經費追加須由執行機構敘明理由，報國科會同意；除特殊情形外應事先辦理。</p>
+                <div class="link-row"><a class="action-link ghost" href="https://law.nstc.gov.tw/LawContent.aspx?id=GL000059" target="_blank" rel="noopener noreferrer">查國科會專題研究計畫經費處理原則</a></div>
+              </li>
+              <li class="step">
+                <h4>填「已核准之流出（入）金額累計」</h4>
+                <p>若先前流用已經執行機構依校內規定同意，或國科會已同意但尚未調整流用後核定金額，須把先前異動一併計入。手冊建議先以試算表逐筆整理：流出記負數，流入記正數；按補助項目加總，再將累計數填回「經費流用及異動說明」畫面。</p>
+                <p>手冊範例有三筆異動：業務費流出 50,000 元至國外差旅費；國外差旅費流出 1,500 元至研究設備費；研究設備費流出 2,500 元至業務費。累計後，業務費為 −47,500 元、研究設備費為 −1,000 元、國外差旅費為 ＋48,500 元。不要只填本次異動金額。</p>
+              </li>
+              <li class="step">
+                <h4>填其他國科會審核項目</h4>
+                <ul>
+                  <li><strong>轉撥補助經費：</strong>選「轉撥補助經費案」，填寫說明。</li>
+                  <li><strong>出席國際學術會議但未發表論文：</strong>選對應項目，填寫說明。</li>
+                  <li><strong>移地研究衍生交通租金：</strong>選對應項目，填寫說明。</li>
+                  <li><strong>ARRIVE：</strong>在「合作案基本資料」頁填合作企業名稱、合作期間、企業類別與統一編號，逐家填企業金額、已繳金額及申請書承諾金額，並按畫面要求上傳相關文件。</li>
+                  <li><strong>鼓勵企業參與培育博士生方案：</strong>在「合作案基本資料」頁填合作企業、期間、企業類別與統一編號，以及企業金額、申請書承諾的已繳金額。</li>
+                </ul>
+                <p>這兩項都要與其他變更項目分次申請。</p>
+              </li>
+              <li class="step">
+                <h4>變更國外差旅費出國種類</h4>
+                <p>此項由執行機構審核。在「國外差旅費出國種類變更」畫面核對各出國種類的核定金額，填寫變更說明，交代變更或增列的出國目的、理由、出國日期與行程，再存檔。依校內規定同意後，由校內行政人員在系統變更出國種類。</p>
+              </li>
+              <li class="step">
+                <h4>上傳附件，檢查後按「送出」</h4>
+                <p>按左上方「上傳附件」，依變更項目上傳證明文件。核對變更項目、變更後內容、金額與附件無誤後，再按左上方「送出」；只按「存檔」仍是暫存申請。</p>
                 <div class="link-row"><a class="action-link ghost" href="https://ord.nccu.edu.tw/upfiles/download/%E7%A0%94%E7%A9%B6%E8%A8%88%E7%95%AB/%E5%9C%8B%E7%A7%91%E6%9C%83/20240903/%E5%B0%88%E9%A1%8C%E8%A8%88%E7%95%AB%E8%AE%8A%E6%9B%B4%E6%93%8D%E4%BD%9C%E6%89%8B%E5%86%8A.pdf" target="_blank" rel="noopener noreferrer">開啟完整操作手冊（PDF，16 頁）</a></div>
               </li>
               <li class="step">
-                <h4>查變更紀錄；收到補件通知再回系統處理</h4>
-                <p>到「專題變更紀錄」查看暫存、審核中或審核完成狀態。國科會審核完成後會顯示公文文號；執行機構審核完成則顯示依校內規定同意的結果。</p>
-                <p>若收到補充說明通知，從「上傳附件」選檔並填說明，上傳後按「送出」，最後按「附件上傳已完成通知學術處承辦人」。</p>
+                <h4>從「專題變更紀錄」查進度與申請表</h4>
+                <p>可查看暫存、審核中、審核完成的紀錄。變更項目旁可刪除項目；變更後內容旁可補上傳或查看附件。按申請表圖示可檢視「專題研究計畫變更申請表」；送出後表上的「樣張」字樣會消失。</p>
+                <p>國科會審核完成會顯示公文文號，國科會行文至執行機構後，接續與校內行政人員確認。執行機構審核完成則顯示「同意（依校內規定辦理）」。</p>
+              </li>
+              <li class="step">
+                <h4>收到補充說明通知時，完成補件</h4>
+                <p>從通知信回到案件，按左上方「上傳附件」。按「選擇檔案」、填檔案說明，再按「上傳」；多份檔案就重複選檔與上傳。確認檔案齊全後按「送出」，最後按「附件上傳已完成通知學術處承辦人」。對補件內容有疑問，聯絡通知信副本中的學術處承辦人。</p>
               </li>
             </ol>
           </div>
